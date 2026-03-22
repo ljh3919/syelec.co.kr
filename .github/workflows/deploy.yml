@@ -1,4 +1,4 @@
-name: 🚀 Deploy to Cafe24
+name: 🚀 Deploy to Cafe24 
 
 on:
   push:
