@@ -22,7 +22,6 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          composer install --no-dev --optimize-autoloader --no-interaction --no-progress
           npm install
           npm run build
 
