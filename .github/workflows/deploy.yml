@@ -23,7 +23,7 @@ jobs:
           local-dir: ./
 
           git-ftp-args: |
-            --remote-root /www/
+            --remote-root ./
             --force
             --parallel 5
             --exclude .git*
