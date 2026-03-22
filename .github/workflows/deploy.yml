@@ -24,6 +24,7 @@ jobs:
 
           git-ftp-args: |
             --remote-root ./
+            --init
             --force
             --parallel 5
             --exclude .git*
