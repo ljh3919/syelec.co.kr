@@ -1,35 +1,27 @@
-name: Deploy to Cafe24
+name: 🚀 Deploy to Cafe24
 
 on:
   push:
     branches:
-      - main   # 또는 master
+      - main
 
 jobs:
-  ftp-deploy:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 코드 체크아웃
+      - name: 📥 Checkout
         uses: actions/checkout@v4
 
-      - name: FTP 배포
+      - name: 🚀 FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@v3.1.1
         with:
           ftp-server: ${{ secrets.FTP_SERVER }}
           ftp-username: ${{ secrets.FTP_USERNAME }}
           ftp-password: ${{ secrets.FTP_PASSWORD }}
+
           local-dir: ./
-          server-dir: /www/
-          exclude: |
-            **/.git*
-            **/.git*/**
-            **/node_modules/**
-            **/.github/**
-            **/.DS_Store
-            **/README.md
-            **/yarn.lock
-            **/package-lock.json
+
           git-ftp-args: |
             --remote-root /www/
             --force
