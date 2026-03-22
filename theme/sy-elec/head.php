@@ -1,0 +1,58 @@
+<?php
+if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
+
+if (G5_IS_MOBILE) {
+    include_once(G5_THEME_MOBILE_PATH.'/head.php');
+    return;
+}
+
+if(G5_COMMUNITY_USE === false) {
+    define('G5_IS_COMMUNITY_PAGE', true);
+    include_once(G5_THEME_SHOP_PATH.'/shop.head.php');
+    return;
+}
+
+include_once(G5_PATH.'/head.sub.php');
+add_stylesheet('<link rel="stylesheet" href="'.G5_THEME_URL.'/css/style.css">', 0);
+?>
+<header class="header-wrapper">
+    <div class="header-container">
+        <a href="<?php echo G5_URL; ?>" class="logo" style="text-decoration:none; display:flex; align-items:center;">
+            <img src="<?php echo G5_IMG_URL ?>/logo.png" alt="<?php echo isset($config['cf_title']) ? $config['cf_title'] : '에스와이일렉트릭'; ?>" style="max-height:40px;">
+        </a>
+        <nav class="gnb">
+            <ul class="gnb-list">
+                <?php
+                if(function_exists('get_menu_db')) {
+                    $menu_datas = get_menu_db(0, true);
+                    foreach( $menu_datas as $row ){
+                        if( empty($row) ) continue;
+                ?>
+                <li class="gnb-item">
+                    <a href="<?php echo $row['me_link']; ?>" target="_<?php echo $row['me_target']; ?>" class="gnb-link"><?php echo $row['me_name'] ?></a>
+                    <?php if(isset($row['sub']) && is_array($row['sub']) && count($row['sub']) > 0) { ?>
+                    <ul class="gnb-sublist">
+                        <?php foreach( (array) $row['sub'] as $row2 ){ ?>
+                        <li><a href="<?php echo $row2['me_link']; ?>" target="_<?php echo $row2['me_target']; ?>" class="gnb-sublink"><?php echo $row2['me_name'] ?></a></li>
+                        <?php } ?>
+                    </ul>
+                    <?php } ?>
+                </li>
+                <?php }
+                } else {
+                    echo '<li class="gnb-item"><a href="#" class="gnb-link">메뉴를 설정해주세요</a></li>';
+                }
+                ?>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main class="content-wrapper">
+    <?php 
+    $is_legacy_page = strpos($_SERVER['SCRIPT_NAME'], '/page/') !== false;
+    if(!defined('_INDEX_') && !$is_legacy_page) { 
+    ?>
+    <!-- 서브페이지 상단 타이틀 (게시판 등에만 출력) -->
+    <h2 id="sub_page_title"><?php echo get_head_title($g5['title']); ?></h2>
+    <div id="sub_container">
+    <?php } ?>
