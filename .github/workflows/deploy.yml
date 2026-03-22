@@ -16,11 +16,17 @@ jobs:
       - name: FTP 배포
         uses: SamKirkland/FTP-Deploy-Action@v3.1.1
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
+          ftp-server: ${{ secrets.FTP_SERVER }}
+          ftp-username: ${{ secrets.FTP_USERNAME }}
+          ftp-password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./
           server-dir: /www/
           exclude: |
             **/.git*
+            **/.git*/**
             **/node_modules/**
+            **/.github/**
+            **/.DS_Store
+            **/README.md
+            **/yarn.lock
+            **/package-lock.json
