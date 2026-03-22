@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: "Noto Sans Thin";
+    font-style: normal;
+    font-weight: 100;
+    src:
+    /* url("../webfont/NotoSans-Thin.eot"), */
+    url("../webfont/NotoSans-Thin.woff2") format("woff2"),
+    url("../webfont/NotoSans-Thin.woff") format("woff"),
+    url("../webfont/NotoSans-Thin.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "Noto Sans Light";
+    font-style: normal;
+    font-weight: 300;
+    src:
+    /* url("../webfont/NotoSans-Light.eot"), */
+    url("../webfont/NotoSans-Light.woff2") format("woff2"),
+    url("../webfont/NotoSans-Light.woff") format("woff"),
+    url("../webfont/NotoSans-Light.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "Noto Sans DemiLight";
+    font-style: normal;
+    font-weight: 350;
+    src:
+    /* url("../webfont/NotoSans-DemiLight.eot"), */
+    url("../webfont/NotoSans-DemiLight.woff2") format("woff2"),
+    url("../webfont/NotoSans-DemiLight.woff") format("woff"),
+    url("../webfont/NotoSans-DemiLight.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "Noto Sans";
+    font-style: normal;
+    font-weight: 400;
+    src:
+    /* url("../webfont/NotoSans-Regular.eot"), */
+    url("../webfont/NotoSans-Regular.woff2") format("woff2"),
+    url("../webfont/NotoSans-Regular.woff") format("woff"),
+    url("../webfont/NotoSans-Regular.otf") format("truetype");
+}
+
+
+@font-face {
+    font-family: "Noto Sans Medium";
+    font-style: normal;
+    font-weight: 500;
+    src:
+    /* url("../webfont/NotoSans-Medium.eot"), */
+    url("../webfont/NotoSans-Medium.woff2") format("woff2"),
+    url("../webfont/NotoSans-Medium.woff") format("woff"),
+    url("../webfont/NotoSans-Medium.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "Noto Sans Bold";
+    font-style: normal;
+    font-weight: 700;
+    src:
+    /* url("../webfont/NotoSans-Bold.eot"), */
+    url("../webfont/NotoSans-Bold.woff2") format("woff2"),
+    url("../webfont/NotoSans-Bold.woff") format("woff"),
+    url("../webfont/NotoSans-Bold.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "Noto Sans Black";
+    font-style: normal;
+    font-weight: 900;
+    src:
+    /* url("../webfont/NotoSans-Black.eot"), */
+    url("../webfont/NotoSans-Black.woff2") format("woff2"),
+    url("../webfont/NotoSans-Black.woff") format("woff"),
+    url("../webfont/NotoSans-Black.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "NanumSquareRound";
+  font-style: normal;
+  font-weight: 300;
+  src: local("NanumSquareRoundL"), /* computer */
+    /* url("../webfont/NanumSquareRoundL.eot"), */
+    url("../webfont/NanumSquareRoundL.woff2") format("woff2"),
+    url("../webfont/NanumSquareRoundL.woff") format("woff"),
+    url("../webfont/NanumSquareRoundL.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NanumSquareRound";
+  font-style: normal;
+  font-weight: 400;
+  src: local("NanumSquareRoundR"), /* computer */
+    /* url("../webfont/NanumSquareRoundR.eot"), */
+    url("../webfont/NanumSquareRoundR.woff2") format("woff2"),
+    url("../webfont/NanumSquareRoundR.woff") format("woff"),
+    url("../webfont/NanumSquareRoundR.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NanumSquareRound";
+  font-style: normal;
+  font-weight: 700;
+  src: local("NanumSquareRoundB"), /* computer */
+    /* url("../webfont/NanumSquareRoundB.eot"), */
+    url("../webfont/NanumSquareRoundB.woff2") format("woff2"),
+    url("../webfont/NanumSquareRoundB.woff") format("woff"),
+    url("../webfont/NanumSquareRoundB.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NanumSquareRound";
+  font-style: normal;
+  font-weight: 800;
+  src: local("NanumSquareRoundEB"), /* computer */
+    /* url("../webfont/NanumSquareRoundEB.eot"), */
+    url("../webfont/NanumSquareRoundEB.woff2") format("woff2"),
+    url("../webfont/NanumSquareRoundEB.woff") format("woff"),
+    url("../webfont/NanumSquareRoundEB.ttf") format("truetype");
+}
