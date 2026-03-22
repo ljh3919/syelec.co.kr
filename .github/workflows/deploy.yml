@@ -30,3 +30,10 @@ jobs:
             **/README.md
             **/yarn.lock
             **/package-lock.json
+          git-ftp-args: |
+            --remote-root /www/
+            --force
+            --parallel 5
+            --exclude .git*
+            --exclude node_modules
+            --exclude .github
