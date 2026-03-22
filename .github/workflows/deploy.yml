@@ -1,4 +1,4 @@
-name: 🚀 Deploy to Cafe24 (Stable)
+name: 🚀 Deploy to Cafe24
 
 on:
   push:
@@ -13,12 +13,15 @@ jobs:
       - name: 📥 Checkout
         uses: actions/checkout@v4
 
-      - name: 🚀 FTP Upload
-        uses: burnett01/rsync-deployments@v7.0.1
+      - name: 🚀 FTP Deploy
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          switches: -avzr --delete
-          path: ./
-          remote_path: /www/
-          remote_host: ${{ secrets.FTP_SERVER }}
-          remote_user: ${{ secrets.FTP_USERNAME }}
-          remote_key: ${{ secrets.FTP_PASSWORD }}
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./
+          server-dir: /www/
+          exclude: |
+            **/.git*
+            **/node_modules/**
+            **/.github/**
