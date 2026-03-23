@@ -10,11 +10,11 @@ include_once(G5_THEME_PATH.'/head.php');
 <section class="hero-section">
     <div class="hero-inner">
         <span class="hero-badge">산업용 전기제어 전문기업</span>
-        <h2>산업용 전기제어<br>· 배전반 제작 전문</h2>
+        <h2>산업용 전기제어<br>· 배전반 납품 전문</h2>
         <p>10년 이상 현장 경험과 기술력으로 완성하는 맞춤 솔루션</p>
         <div class="hero-btns">
-            <a href="tel:010-1234-5678" class="btn-primary"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:8px;vertical-align:text-bottom;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>전화 상담하기</a>
-            <a href="<?php echo G5_URL; ?>/bbs/write.php?bo_table=estimate" class="btn-secondary"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:8px;vertical-align:text-bottom;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>빠른 견적 요청</a>
+            <a href="tel:031-591-8310" class="btn-primary"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:8px;vertical-align:text-bottom;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>전화 상담하기</a>
+            <a href="<?php echo G5_URL; ?>/page/estimate.php" class="btn-secondary"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:8px;vertical-align:text-bottom;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>빠른 견적 요청</a>
         </div>
         <div class="hero-bottom-info">
             <div class="info-item">
@@ -30,6 +30,20 @@ include_once(G5_THEME_PATH.'/head.php');
                 <span>전국 시공 가능</span>
             </div>
         </div>
+
+        <!-- 카카오톡 상담 박스 (이미지 디자인 반영) -->
+        <!-- <div class="kakao-consult-box">
+            <div class="k-top">
+                <div class="k-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3c-4.971 0-9 3.134-9 7 0 2.478 1.637 4.659 4.14 5.92-.164.577-.591 2.083-.676 2.42-.1.396.143.392.3.287.123-.082 1.957-1.332 2.74-1.873.805.171 1.656.266 2.496.266 4.971 0 9-3.134 9-7s-4.029-7-9-7z"/></svg>
+                </div>
+                <div class="k-txt">
+                    <span class="k-sub">실시간 빠른 답변</span>
+                    <span class="k-tit">카카오톡 상담</span>
+                </div>
+            </div>
+            <a href="tel:031-591-8310" class="k-tel">031-591-8310</a>
+        </div> -->
     </div>
 </section>
 
@@ -37,115 +51,109 @@ include_once(G5_THEME_PATH.'/head.php');
 <section class="business-section">
     <div class="container">
         <h3 class="section-subtitle">OUR BUSINESS</h3>
-        <h2 class="section-title">핵심 제품 &amp; 사업 분야</h2>
+        <h2 class="section-title">핵심 제품</h2>
         <p class="section-desc">산업 현장에 최적화된 전기 제어 솔루션을 제공합니다</p>
         <div class="business-grid">
-            <!-- 배전반 -->
+            <!-- 배선용차단기 (MCCB) -->
             <a href="<?php echo G5_URL; ?>/page/product1.php" class="b-card">
-                <div class="b-img"><img src="<?php echo G5_THEME_URL ?>/img/mccb_banner.png" alt="배전반" onerror="this.src='https://via.placeholder.com/400x250/e0e0e0/ffffff?text=Image'"></div>
+                <div class="b-img"><img src="<?php echo G5_URL ?>/images/pro1_img1.png" alt="배선용차단기 (MCCB)" onerror="this.src='https://via.placeholder.com/400x250/e0e0e0/ffffff?text=MCCB'"></div>
                 <div class="b-txt">
-                    <h4>배전반</h4>
-                    <div class="b-tags">
-                        <span>저압/고압</span><span>동력/분전</span>
-                    </div>
-                    <p>산업용·건물용 전력 분배</p>
+                    <h4>배선용차단기 (MCCB)</h4>
+                    <div class="b-tags"><span>HG 시리즈</span><span>HGM Type</span></div>
+                    <p>안전성을 극대화한 저압 차단기</p>
                 </div>
                 <div class="b-footer">자세히 보기 &rarr;</div>
             </a>
-            <!-- 자동제어반 -->
-            <a href="<?php echo G5_URL; ?>/page/product2.php" class="b-card">
-                <div class="b-img"><img src="<?php echo G5_THEME_URL ?>/img/vcb_banner.png" alt="자동제어반" onerror="this.src='https://via.placeholder.com/400x250/e0e0e0/ffffff?text=Image'"></div>
+            <!-- 누전차단기 (ELCB) -->
+            <a href="<?php echo G5_URL; ?>/page/product1_2.php" class="b-card">
+                <div class="b-img"><img src="<?php echo G5_URL ?>/images/pro1_img3.png" alt="누전차단기 (ELCB)" onerror="this.src='https://via.placeholder.com/400x250/e0e0e0/ffffff?text=ELCB'"></div>
                 <div class="b-txt">
-                    <h4>자동제어반</h4>
-                    <div class="b-tags">
-                        <span>PLC</span><span>인버터</span>
-                    </div>
-                    <p>공장 자동화 제어 시스템</p>
+                    <h4>누전차단기 (ELCB)</h4>
+                    <div class="b-tags"><span>HG 시리즈</span><span>HGE Type</span></div>
+                    <p>감전 및 화재 예방을 위한 최적의 솔루션</p>
                 </div>
                 <div class="b-footer">자세히 보기 &rarr;</div>
             </a>
-            <!-- 자동화 설비 -->
-            <a href="<?php echo G5_URL; ?>/page/product3.php" class="b-card">
-                <div class="b-img"><img src="<?php echo G5_THEME_URL ?>/img/cast_resin_banner.png" alt="자동화 설비" onerror="this.src='https://via.placeholder.com/400x250/e0e0e0/ffffff?text=Image'"></div>
+            <!-- 기중차단기 (ACB) -->
+            <a href="<?php echo G5_URL; ?>/page/product1_3.php" class="b-card">
+                <div class="b-img"><img src="<?php echo G5_URL ?>/images/pro1_img4.png" alt="기중차단기 (ACB)" onerror="this.src='https://via.placeholder.com/400x250/e0e0e0/ffffff?text=ACB'"></div>
                 <div class="b-txt">
-                    <h4>자동화 설비</h4>
-                    <div class="b-tags">
-                        <span>FA System</span><span>SCADA</span>
-                    </div>
-                    <p>생산라인 자동화 구축</p>
+                    <h4>기중차단기 (ACB)</h4>
+                    <div class="b-tags"><span>HG 시리즈</span><span>AN Type</span></div>
+                    <p>고성능 전력 계통 보호 기기</p>
                 </div>
                 <div class="b-footer">자세히 보기 &rarr;</div>
             </a>
-            <!-- 유지보수 -->
-            <a href="<?php echo G5_URL; ?>/page/product4.php" class="b-card">
-                <div class="b-img"><img src="<?php echo G5_THEME_URL ?>/img/oil_immersed_banner.png" alt="유지보수" onerror="this.src='https://via.placeholder.com/400x250/e0e0e0/ffffff?text=Image'"></div>
+            <!-- 진공차단기 (VCB) -->
+            <a href="<?php echo G5_URL; ?>/page/product1_4.php" class="b-card">
+                <div class="b-img"><img src="<?php echo G5_URL ?>/images/pro1_img5.png" alt="진공차단기 (VCB)" onerror="this.src='https://via.placeholder.com/400x250/e0e0e0/ffffff?text=VCB'"></div>
                 <div class="b-txt">
-                    <h4>유지보수</h4>
-                    <div class="b-tags">
-                        <span>정기점검</span><span>긴급출동</span>
-                    </div>
-                    <p>A/S 및 설비 진단</p>
+                    <h4>진공차단기 (VCB)</h4>
+                    <div class="b-tags"><span>수배전반용</span><span>고압용</span></div>
+                    <p>탁월한 차단 성능과 신뢰성</p>
                 </div>
                 <div class="b-footer">자세히 보기 &rarr;</div>
             </a>
-        </div>
-    </div>
-</section>
-
-<!-- 주요 시공 실적 Portfolio -->
-<section class="portfolio-section">
-    <div class="container">
-        <h3 class="section-subtitle">PORTFOLIO</h3>
-        <h2 class="section-title">주요 시공 실적</h2>
-        <p class="section-desc">다양한 산업 분야에서 검증된 시공 경험과 신뢰</p>
-        
-        <div class="portfolio-grid">
-            <!-- 1 -->
-            <div class="p-card">
-                <div class="p-img"><img src="<?php echo G5_THEME_URL ?>/img/port1.jpg" alt="OO전자 반도체 공장" onerror="this.src='https://via.placeholder.com/400x250/333/fff?text=Portfolio'"></div>
-                <div class="p-txt">
-                    <span class="p-badge">공장</span>
-                    <h4>OO전자 반도체 공장</h4>
-                    <p>메인 배전반 15면 설치</p>
-                    <div class="p-info">
-                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 2024.01</span>
-                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 3주</span>
-                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> 경기도 화성</span>
-                    </div>
+            <!-- 전자개폐기 (CONTACTORS) -->
+            <a href="<?php echo G5_URL; ?>/page/product1_5.php" class="b-card">
+                <div class="b-img"><img src="<?php echo G5_URL ?>/images/pro1_img6.png" alt="전자개폐기" onerror="this.src='https://via.placeholder.com/400x250/e0e0e0/ffffff?text=Contactors'"></div>
+                <div class="b-txt">
+                    <h4>전자개폐기</h4>
+                    <div class="b-tags"><span>HGC Type</span><span>모터제어</span></div>
+                    <p>컴팩트한 사이즈와 우수한 성능</p>
                 </div>
-            </div>
-            <!-- 2 -->
-            <div class="p-card">
-                <div class="p-img"><img src="<?php echo G5_THEME_URL ?>/img/port2.jpg" alt="OO타워 신축 전기공사" onerror="this.src='https://via.placeholder.com/400x250/333/fff?text=Portfolio'"></div>
-                <div class="p-txt">
-                    <span class="p-badge">빌딩</span>
-                    <h4>OO타워 신축 전기공사</h4>
-                    <p>분전반 및 EPS 설치</p>
-                    <div class="p-info">
-                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 2023.11</span>
-                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 4주</span>
-                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> 서울 강남</span>
-                    </div>
+                <div class="b-footer">자세히 보기 &rarr;</div>
+            </a>
+            <!-- 초소형차단기 (MCB) -->
+            <a href="<?php echo G5_URL; ?>/page/product1_6.php" class="b-card">
+                <div class="b-img"><img src="<?php echo G5_URL ?>/images/pro1_img7.png" alt="초소형차단기 (MCB)" onerror="this.src='https://via.placeholder.com/400x250/e0e0e0/ffffff?text=MCB'"></div>
+                <div class="b-txt">
+                    <h4>초소형차단기 (MCB)</h4>
+                    <div class="b-tags"><span>주택용</span><span>산업용</span></div>
+                    <p>합리적인 가격과 고품질 차단기</p>
                 </div>
-            </div>
-            <!-- 3 -->
-            <div class="p-card">
-                <div class="p-img"><img src="<?php echo G5_THEME_URL ?>/img/port3.jpg" alt="OO석유화학 설비" onerror="this.src='https://via.placeholder.com/400x250/333/fff?text=Portfolio'"></div>
-                <div class="p-txt">
-                    <span class="p-badge">플랜트</span>
-                    <h4>OO석유화학 설비</h4>
-                    <p>제어반·PLC 시스템 구축</p>
-                    <div class="p-info">
-                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 2023.08</span>
-                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 3주</span>
-                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> 울산</span>
-                    </div>
+                <div class="b-footer">자세히 보기 &rarr;</div>
+            </a>
+            <!-- 전자식모터보호계전기 -->
+            <a href="<?php echo G5_URL; ?>/page/product1_7.php" class="b-card">
+                <div class="b-img"><img src="<?php echo G5_URL ?>/images/pro1_img8.png" alt="전자식모터보호계전기" onerror="this.src='https://via.placeholder.com/400x250/e0e0e0/ffffff?text=Relay'"></div>
+                <div class="b-txt">
+                    <h4>전자식모터보호계전기</h4>
+                    <div class="b-tags"><span>EMPRA</span><span>모터보호</span></div>
+                    <p>정밀한 모터 보호 및 모니터링</p>
                 </div>
-            </div>
-        </div>
-        
-        <div class="text-center" style="margin-top: 50px;">
-            <a href="<?php echo G5_URL; ?>/bbs/board.php?bo_table=portfolio" class="btn-outline-white">전체 실적 보기 &rarr;</a>
+                <div class="b-footer">자세히 보기 &rarr;</div>
+            </a>
+            <!-- 디지털복합보호계전기 -->
+            <a href="<?php echo G5_URL; ?>/page/product1_8.php" class="b-card">
+                <div class="b-img"><img src="<?php echo G5_URL ?>/images/pro1_img9.png" alt="디지털복합보호계전기" onerror="this.src='https://via.placeholder.com/400x250/e0e0e0/ffffff?text=Digital Relay'"></div>
+                <div class="b-txt">
+                    <h4>디지털복합보호계전기</h4>
+                    <div class="b-tags"><span>HiMAP</span><span>디지털</span></div>
+                    <p>통합 전력 감시 제어 시스템</p>
+                </div>
+                <div class="b-footer">자세히 보기 &rarr;</div>
+            </a>
+            <!-- 배전용 유입변압기 -->
+            <!-- <a href="<?php echo G5_URL; ?>/page/product2.php" class="b-card">
+                <div class="b-img"><img src="<?php echo G5_URL ?>/images/pro2_img1.png" alt="배전용 유입변압기" onerror="this.src='https://via.placeholder.com/400x250/e0e0e0/ffffff?text=Transformer'"></div>
+                <div class="b-txt">
+                    <h4>배전용 유입변압기</h4>
+                    <div class="b-tags"><span>고효율</span><span>친환경</span></div>
+                    <p>안정적인 전력 공급을 위한 변압기</p>
+                </div>
+                <div class="b-footer">자세히 보기 &rarr;</div>
+            </a> -->
+            <!-- 배전용 몰드변압기 -->
+            <!-- <a href="<?php echo G5_URL; ?>/page/product2_1.php" class="b-card">
+                <div class="b-img"><img src="<?php echo G5_URL ?>/images/pro2_img2.png" alt="배전용 몰드변압기" onerror="this.src='https://via.placeholder.com/400x250/e0e0e0/ffffff?text=Mold Transformer'"></div>
+                <div class="b-txt">
+                    <h4>배전용 몰드변압기</h4>
+                    <div class="b-tags"><span>저소음</span><span>난연성</span></div>
+                    <p>안전하고 효율적인 몰드형 변압기</p>
+                </div>
+                <div class="b-footer">자세히 보기 &rarr;</div>
+            </a> -->
         </div>
     </div>
 </section>
@@ -202,26 +210,16 @@ include_once(G5_THEME_PATH.'/head.php');
     <div class="container cta-flex">
         <div class="cta-text">
             <h2>지금 바로 전문가와 상담하세요</h2>
-            <p>도면 검토부터 견적까지 무료로 도와드립니다</p>
+            <p>전기제어반, 배전반 제작 및 납품 문의 환영합니다</p>
         </div>
         <div class="cta-btns">
-            <a href="tel:010-1234-5678" class="btn-tel"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:8px;vertical-align:text-bottom;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> 010-1234-5678</a>
-            <a href="#" class="btn-kakao"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:8px;vertical-align:text-bottom;"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg> 카톡 상담하기</a>
+            <a href="tel:031-591-8310" class="btn-tel"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:8px;vertical-align:text-bottom;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> 031-591-8310</a>
+            <a href="https://pf.kakao.com/_xxxx" target="_blank" class="btn-kakao"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:8px;vertical-align:text-bottom;"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg> 카톡 상담하기</a>
         </div>
     </div>
 </section>
 
-<!-- Floating Buttons -->
-<div class="floating-chat">
-    <a href="#" class="float-btn kakao">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
-        카카오톡
-    </a>
-    <a href="tel:010-1234-5678" class="float-btn phone">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-        전화상담
-    </a>
-</div>
+
 
 <?php
 include_once(G5_THEME_PATH.'/tail.php');

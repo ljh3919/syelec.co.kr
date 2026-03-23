@@ -97,6 +97,65 @@
     height: 36px;
 }
 
+/* Kakao Consult Box */
+.kakao-consult-box {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    background: #fee500;
+    width: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+}
+.k-top {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #fee500;
+}
+.k-icon {
+    background: #191919;
+    color: #fee500;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.k-txt {
+    display: flex;
+    flex-direction: column;
+}
+.k-sub {
+    font-size: 0.75rem;
+    color: #333;
+    font-weight: 500;
+}
+.k-tit {
+    font-size: 1rem;
+    font-weight: 800;
+    color: #191919;
+}
+.k-tel {
+    background: #191919;
+    color: #fee500;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+.k-tel:hover {
+    background: #000;
+}
+
 /* Global Section Titles */
 .section-subtitle {
     color: #ff6600;
@@ -150,14 +209,19 @@
     width: 100%;
     height: 180px;
     overflow: hidden;
+    background: #fdfdfd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
 }
 .b-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
     transition: transform 0.5s ease;
 }
-.b-card:hover .b-img img { transform: scale(1.08); }
+.b-card:hover .b-img img { transform: scale(1.05); }
 .b-txt {
     padding: 25px 20px;
     flex-grow: 1;
