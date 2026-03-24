@@ -9,8 +9,8 @@ include_once(G5_THEME_PATH.'/head.php');
 <!-- 메인 히어로 배너 (ChatGPT Image.png 스타일) -->
 <section class="hero-section">
     <div class="hero-inner container">
-        <span class="hero-badge">산업용 전기제어 전문기업</span>
-        <h2>산업용 전기제어<br>· 배전반 제작 전문</h2>
+        <span class="hero-badge">현대차단기 전문기업</span>
+        <h2>HD 현대일렉트릭 특약점</h2>
         <p>10년 이상 현장 경험과 기술력으로 완성하는 맞춤 솔루션</p>
         
         <div class="hero-btns">
