@@ -9,8 +9,8 @@ include_once(G5_THEME_PATH.'/head.php');
 <!-- 메인 히어로 배너 -->
 <section class="hero-section">
     <div class="hero-inner">
-        <span class="hero-badge">산업용 전기제어 전문기업</span>
-        <h2>산업용 전기제어<br>· 배전반 납품 전문</h2>
+        <span class="hero-badge">현대 차단기 전문기업</span>
+        <h2>HD현대일렉트릭 특약점</h2>
         <p>10년 이상 현장 경험과 기술력으로 완성하는 맞춤 솔루션</p>
         <div class="hero-btns">
             <a href="tel:031-591-8310" class="btn-primary"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:8px;vertical-align:text-bottom;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>전화 상담하기</a>
