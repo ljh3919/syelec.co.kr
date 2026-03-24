@@ -10,14 +10,6 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 
 <!-- 게시물 작성/수정 시작 { -->
 
-<!-- subVisual -->
-<div id="sub_visual" class="sub_support">
-  <div class="sub_visu_txt_area">
-    <p class="sub_visu_txt">고객지원</p>
-        <p class="sub_visu_line"></p>
-    <p class="sub_visu_txt2">에스와이일렉트릭은 고객의 목소리에 귀 기울이며<br>최상의 솔루션과 서비스를 제공하기 위해 노력하고 있습니다.</p>
-    </div>
-</div>
 <!--//Visual --> 
 
 <!-- contents -->
@@ -35,19 +27,22 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 <!--leftmenu_wrap-->
 
   <div id="article_right">
-    <div id="article_top">
-      <ul>
-        <? if ($bo_table == "notice") { ?>
-        <li class="article_tit">공지사항</li>
-        <li class="location"><i class="fa fa-home" aria-hidden="true"></i> HOME &gt; 고객지원 &gt; 공지사항</li>
-        <? } if ($bo_table == "") { ?>
-        <li class="article_tit">온라인문의</li>
-        <li class="location"><i class="fa fa-home" aria-hidden="true"></i> HOME &gt; 고객지원 &gt; 온라인문의</li>
-        <? } if ($bo_table == "catalogue") { ?>
-        <li class="article_tit">카탈로그 다운로드</li>
-        <li class="location"><i class="fa fa-home" aria-hidden="true"></i> HOME &gt; 고객지원 &gt; 카탈로그 다운로드</li>
-        <? } ?>
-      </ul>
+    <div id="article_top" class="has-bg bg-support">
+      <div class="article_top_inner">
+        <ul>
+          <? if ($bo_table == "notice") { ?>
+          <li class="article_tit">공지사항</li>
+          <li class="location"><i class="fa fa-home" aria-hidden="true"></i> HOME &gt; 고객지원 &gt; 공지사항</li>
+          <? } if ($bo_table == "") { ?>
+          <li class="article_tit">온라인문의</li>
+          <li class="location"><i class="fa fa-home" aria-hidden="true"></i> HOME &gt; 고객지원 &gt; 온라인문의</li>
+          <? } if ($bo_table == "catalogue") { ?>
+          <li class="article_tit">카탈로그 다운로드</li>
+          <li class="location"><i class="fa fa-home" aria-hidden="true"></i> HOME &gt; 고객지원 &gt; 카탈로그 다운로드</li>
+          <? } ?>
+        </ul>
+        <p class="article_sub_txt">에스와이일렉트릭은 고객의 목소리에 귀 기울이며<br>최상의 솔루션과 서비스를 제공하기 위해 노력하고 있습니다.</p>
+      </div>
     </div>
     <!-- article_top -->
     <div id="article">
