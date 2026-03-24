@@ -1,22 +1,24 @@
 <?php
-if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
+if (!defined('_GNUBOARD_'))
+    exit; // 개별 페이지 접근 불가
 
 if (G5_IS_MOBILE) {
-    include_once(G5_THEME_MOBILE_PATH.'/tail.php');
+    include_once(G5_THEME_MOBILE_PATH . '/tail.php');
     return;
 }
 
-if(G5_COMMUNITY_USE === false) {
-    include_once(G5_THEME_SHOP_PATH.'/shop.tail.php');
+if (G5_COMMUNITY_USE === false) {
+    include_once(G5_THEME_SHOP_PATH . '/shop.tail.php');
     return;
 }
 ?>
-    <?php 
-    $is_legacy_page = strpos($_SERVER['SCRIPT_NAME'], '/page/') !== false;
-    if(!defined('_INDEX_') && !$is_legacy_page) { 
-    ?>
+    <?php
+$is_legacy_page = strpos($_SERVER['SCRIPT_NAME'], '/page/') !== false;
+if (!defined('_INDEX_') && !$is_legacy_page) {
+?>
     </div><!-- #sub_container -->
-    <?php } ?>
+    <?php
+}?>
 </main><!-- .content-wrapper -->
 
 <footer class="footer-wrapper">
@@ -24,9 +26,9 @@ if(G5_COMMUNITY_USE === false) {
         <div class="footer-info">
             <h2 style="color:#fff; margin-top:0; font-size:1.5rem;">에스와이일렉트릭</h2>
             <p style="line-height:1.8;">
-                대표자: (대표자명) | 사업자등록번호: (사업자번호) <br>
+                대표자: 박근수 | 사업자등록번호: 657-06-03130 <br>
                 <!-- 주소는 임시로 표기 -->
-                본사: (사업장이 위치한 주소지 입력) <br>
+                본사: 경기도 구리시 갈매중앙로 190, C동 5층 5029호 (갈매동, 구리갈매 휴밸나인 지식산업센터) <br>
                 TEL: 031-591-8310 | EMAIL: sy-elec@naver.com <br>
                 COPYRIGHT &copy; SY-ELECTRIC. ALL RIGHTS RESERVED.
             </p>
@@ -52,5 +54,5 @@ if(G5_COMMUNITY_USE === false) {
 </div>
 
 <?php
-include_once(G5_PATH.'/tail.sub.php');
+include_once(G5_PATH . '/tail.sub.php');
 ?>

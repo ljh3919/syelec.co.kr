@@ -110,7 +110,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
             </div>
             <!-- } 게시판 페이지 정보 및 버튼 끝 -->
                     
-            <div class="tbl_head01 tbl_wrap">
+      <div class="tbl_head01 tbl_wrap">
                 <table>
                 <caption><?php echo $board['bo_subject'] ?> 목록</caption>
                 <thead>
@@ -339,4 +339,7 @@ jQuery(function($){
 });
 </script>
 <?php } ?>
+    </div><!-- #article -->
+  </div><!-- #article_right -->
+</div><!-- #contents -->
 <!-- } 게시판 목록 끝 -->

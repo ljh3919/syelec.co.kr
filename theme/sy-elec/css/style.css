@@ -359,30 +359,47 @@ body {
 }
 .btn_cancel:hover { background: var(--light-bg) !important; }
 
-/* Board List */
-#bo_list .td_subject a { color: var(--text-dark); font-size: 1.05rem; font-weight: 500; }
-#bo_list .td_subject a:hover { color: var(--primary); text-decoration: underline; }
-#bo_list tbody tr { border-bottom: 1px solid var(--border); transition: background 0.2s; }
-#bo_list tbody tr:hover td { background: var(--light-bg) !important; }
-#bo_list tbody tr:hover { border-left-color: var(--primary) !important; }
-#bo_list .td_num, #bo_list .td_datetime, #bo_list .td_name { color: var(--text-light); }
-#bo_cate ul li a { border-radius: 30px; font-weight: 600; padding: 8px 20px; transition: 0.3s; }
 #bo_cate #bo_cate_on { background: var(--primary) !important; border-color: var(--primary) !important; color: var(--white) !important; box-shadow: none !important; }
 
-/* Board View */
-#bo_v_title .bo_v_tit { font-size: 2rem; font-weight: 800; color: var(--primary); border-bottom: 2px solid var(--text-dark); padding-bottom: 15px; letter-spacing: -0.5px; }
-#bo_v_info { border-bottom: 1px solid #eee; padding: 15px 0; }
-#bo_v_con { font-size: 1.1rem; line-height: 1.8; color: var(--text-dark); padding: 30px 0; }
-#bo_v_file li { border-color: var(--border); border-radius: 8px; transition: 0.3s; }
-#bo_v_file li:hover { border-color: var(--primary); box-shadow: 0 4px 15px rgba(0,75,155,0.05); }
-#bo_v_file li:hover i { color: var(--primary); }
-#bo_v_file a:focus, #bo_v_file li:hover a, #bo_v_file a:active { color: var(--primary); }
+/* Premium Article Wrapper (estimate.php design) */
+#article { 
+  background: var(--white); 
+  padding: 40px; 
+  border-radius: 15px; 
+  box-shadow: 0 15px 40px rgba(0,0,0,0.06); 
+  border: 1px solid rgba(0,0,0,0.03);
+  margin-top: 20px;
+}
 
-/* Board Write */
-#bo_w .bo_w_tit .frm_input { border: 1px solid var(--border); height: 45px; border-radius: 5px; font-size: 1.1rem; padding: 0 15px; transition: 0.3s; }
-#bo_w .bo_w_tit .frm_input:focus { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(0,75,155,0.1); outline: none; }
-#bo_w .frm_input, #bo_w .frm_file { border: 1px solid var(--border); padding: 8px 12px; border-radius: 4px; transition: 0.3s; }
-#bo_w .frm_input:focus { border-color: var(--primary); outline: none; box-shadow: 0 0 0 3px rgba(0,75,155,0.1); }
+/* Board List Sync with estimate.php */
+#bo_list .tbl_head01 table { border-top: 2.5px solid var(--primary); }
+#bo_list .tbl_head01 th { 
+  background: #f8f9fa; color: var(--text-dark); font-weight: 700; padding: 20px 10px; border-bottom: 1px solid var(--border); 
+}
+#bo_list .tbl_head01 td { padding: 18px 10px; border-bottom: 1px solid #f1f1f1; }
+#bo_list .td_subject a { color: var(--text-dark); font-size: 1.05rem; font-weight: 600; }
+#bo_list .td_subject a:hover { color: var(--primary); }
+#bo_list tbody tr:hover td { background: #fcfdfe !important; }
+
+
+/* Board View */
+#bo_v { margin-top: 20px; }
+#bo_v_title .bo_v_tit { font-size: 1.8rem; font-weight: 800; color: var(--primary); border-bottom: 2px solid var(--text-dark); padding-bottom: 20px; letter-spacing: -0.5px; }
+#bo_v_info { border-bottom: 1px solid #f1f1f1; padding: 20px 0; color: var(--text-light); }
+#bo_v_con { font-size: 1.1rem; line-height: 1.8; color: var(--text-dark); padding: 40px 0; min-height: 300px; }
+#bo_v_file li { border: 1px solid var(--border); border-radius: 8px; margin-bottom: 10px; transition: 0.3s; }
+#bo_v_file li:hover { border-color: var(--primary); background: #f8fbff; }
+
+/* Board Write Sync with estimate.php */
+#bo_w { margin-top: 20px; }
+#bo_w .frm_input { 
+  border: 1px solid var(--border); height: 45px; border-radius: 6px; font-size: 1rem; padding: 0 15px; background: #fafafa; transition: 0.3s; 
+}
+#bo_w .frm_input:focus { border-color: var(--primary); background: #fff; box-shadow: 0 0 0 3px rgba(0,75,155,0.05); outline: none; }
+#bo_w table { width: 100%; border-top: 2.5px solid var(--primary); border-collapse: collapse; }
+#bo_w th { background: #f8f9fa; padding: 20px; text-align: left; border-bottom: 1px solid var(--border); font-weight: 700; width: 180px; }
+#bo_w td { padding: 15px 20px; border-bottom: 1px solid var(--border); }
+#bo_w .btn_submit { width: 220px; height: 55px; border-radius: 50px; font-size: 1.1rem; font-weight: 800; }
 
 /* Floating Chat */
 .floating-chat {

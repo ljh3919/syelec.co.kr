@@ -48,11 +48,9 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
         <li class="location"><i class="fa fa-home" aria-hidden="true"></i> HOME &gt; 고객지원 &gt; 카탈로그 다운로드</li>
         <? } ?>
       </ul>
-    </div>
     <!-- article_top -->
     <div id="article">
-
-        <article id="bo_v" style="width:<?php echo $width; ?>">
+    <section id="bo_v" style="width:<?php echo $width; ?>">
             <header>
                 <h2 id="bo_v_title">
                     <?php if ($category_name) { ?>
@@ -261,11 +259,10 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
             ?>
         </article>
         <!-- } 게시판 읽기 끝 -->
-        </div>
-
-    <!-- article --> 
-  </div>
-  <!--article_right--> 
+        </section>
+    </div><!-- #article -->
+  </div><!-- #article_right -->
+</div><!-- #contents --> 
   
 </div>
 <!--// contents -->
