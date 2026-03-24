@@ -339,3 +339,31 @@ box-shadow:inset 0 1px 2px rgba(0, 0, 0, 0.1)}
 #bo_w .bo_w_select select {border:1px solid #d0d3db;width:100%;height:40px;border-radius:3px}
 #bo_w .btn_submit {padding:0 20px;font-size:1.167em}
 #bo_w .btn_cancel {border-radius:3px;font-size:1.167em}
+
+/* Premium Overrides matching estimate.php */
+:root {
+  --primary: #004b9b;
+  --secondary: #00336a;
+  --border: #e2e8f0;
+}
+
+#bo_list .tbl_head01 table { border-top: 2px solid var(--primary); }
+#bo_list .tbl_head01 th { background: #f8f9fa; color: #333; font-weight: 700; padding: 15px 10px; border-bottom: 1px solid var(--border); }
+#bo_list .tbl_head01 td { padding: 15px 10px; border-bottom: 1px solid var(--border); }
+#bo_list tbody tr:hover { background: #fcfdfe; }
+
+.btn_b01, .btn_b02, .btn_submit, .btn_cancel { 
+  border-radius: 50px !important; padding: 8px 20px !important; font-weight: 700 !important; transition: all 0.3s;
+}
+.btn_b01 { background: var(--primary) !important; color: #fff !important; border: none !important; }
+.btn_b01:hover { background: var(--secondary) !important; transform: translateY(-2px); }
+
+#bo_v { border-top: 2px solid var(--primary); padding-top: 20px; }
+#bo_v_title .bo_v_tit { font-size: 1.8rem; font-weight: 800; color: #222; }
+
+#bo_w .frm_input { 
+  border: 1px solid var(--border) !important; border-radius: 6px !important; background: #fafafa !important; padding: 10px 15px !important;
+}
+#bo_w .frm_input:focus { border-color: var(--primary) !important; background: #fff !important; box-shadow: 0 0 0 3px rgba(0,75,155,0.05); }
+
+.bo_sch_wrap .bo_sch { border-radius: 15px; border: none; box-shadow: 0 15px 35px rgba(0,0,0,0.15); }
