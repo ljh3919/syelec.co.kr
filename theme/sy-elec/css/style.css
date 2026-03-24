@@ -253,13 +253,24 @@ body {
 
 #article_right { flex-grow: 1; min-width: 0; }
 #article_top {
-  display: flex; justify-content: space-between; align-items: flex-end;
-  border-bottom: 2px solid var(--text-dark);
-  padding-bottom: 15px; margin-bottom: 40px;
+  display: flex; flex-direction: column; justify-content: center; align-items: flex-start;
+  padding: 40px 30px; margin-bottom: 40px; border-radius: 12px;
+  background: var(--light-bg); position: relative; overflow: hidden;
 }
-#article_top ul { list-style: none; margin: 0; padding: 0; display: flex; justify-content: space-between; width: 100%; align-items: center; }
-.article_tit { font-size: 2rem; font-weight: 800; color: var(--primary); letter-spacing:-0.5px;}
-.location { font-size: 0.95rem; color: var(--text-light); }
+#article_top.has-bg { color: #fff; border:none; }
+#article_top.has-bg .article_tit { color: #fff; margin-bottom: 5px; text-shadow: 0 2px 10px rgba(0,0,0,0.3); }
+#article_top.has-bg .location { color: rgba(255,255,255,0.8); text-shadow: 0 1px 5px rgba(0,0,0,0.3); }
+#article_top ul { list-style: none; margin: 0; padding: 0; display: block; width: 100%; }
+
+/* Section Backgrounds for Article Top */
+.bg-support { background: linear-gradient(rgba(0, 40, 85, 0.7), rgba(0, 40, 85, 0.7)), url('../img/support_sub.png') no-repeat center center / cover !important; }
+.bg-company { background: linear-gradient(rgba(0, 40, 85, 0.7), rgba(0, 40, 85, 0.7)), url('../img/company_sub.png') no-repeat center center / cover !important; }
+.bg-business { background: linear-gradient(rgba(0, 40, 85, 0.7), rgba(0, 40, 85, 0.7)), url('../img/bussnies_sub.png') no-repeat center center / cover !important; }
+.bg-product { background: linear-gradient(rgba(0, 40, 85, 0.7), rgba(0, 40, 85, 0.7)), url('../img/product_sub.png') no-repeat center center / cover !important; }
+
+.article_tit { font-size: 1.8rem; font-weight: 800; color: var(--primary); letter-spacing:-0.5px;}
+.location { font-size: 0.85rem; color: var(--text-light); }
+
 
 .greeting_tit { font-size: 1.6rem; font-weight: 700; color: var(--text-dark); margin-bottom: 30px; letter-spacing:-0.5px; }
 .greeting_txt { font-size: 1.1rem; line-height: 1.9; color: var(--text-light); }
