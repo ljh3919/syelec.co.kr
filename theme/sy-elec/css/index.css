@@ -97,6 +97,66 @@
     color: var(--point);
 }
 
+/* Floating Kakao box on Hero */
+.kakao-floating {
+    position: absolute;
+    bottom: -40px;
+    right: 0;
+    width: 320px;
+    background: var(--kakao);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+}
+
+.k-header {
+    padding: 25px 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.k-circle {
+    background: #191919;
+    color: var(--kakao);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.k-title-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.k-stxt {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.k-mtxt {
+    font-size: 1.35rem;
+    font-weight: 900;
+    color: #191919;
+    letter-spacing: -0.5px;
+}
+
+.k-button {
+    background: #191919;
+    color: var(--kakao);
+    text-align: center;
+    padding: 18px 0;
+    display: block;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 1.6rem;
+}
+
 /* Business Section */
 .business-section {
     padding: 140px 0;
