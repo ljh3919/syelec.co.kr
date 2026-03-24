@@ -166,10 +166,15 @@ body {
   text-align: center;
   color: var(--white);
   padding: 80px 20px;
+  background-size: cover;
+  background-position: center;
 }
-.sub_visu_txt { font-size: 2.5rem; font-weight: bold; margin: 0; letter-spacing: -1px; }
-.sub_visu_line { width: 50px; height: 4px; background: var(--white); margin: 20px auto; opacity: 0.5; }
-.sub_visu_txt2 { font-size: 1.2rem; opacity: 0.9; }
+#sub_visual.sub_company {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/company_title_bg.png') no-repeat center center / cover;
+}
+.sub_visu_txt { font-size: 2.5rem; font-weight: bold; margin: 0; letter-spacing: -1px; position: relative; z-index: 1; }
+.sub_visu_line { width: 50px; height: 4px; background: var(--white); margin: 20px auto; opacity: 0.5; position: relative; z-index: 1; }
+.sub_visu_txt2 { font-size: 1.2rem; opacity: 0.9; position: relative; z-index: 1; }
 
 #contents {
   max-width: 1200px; margin: 60px auto;
