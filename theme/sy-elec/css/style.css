@@ -65,20 +65,20 @@ body {
 .header-tel-btn {
   display: flex;
   align-items: center;
-  gap: 12px;
-  background: var(--point);
+  gap: 10px;
+  background: var(--primary);
   color: var(--white);
-  padding: 14px 28px;
-  border-radius: 4px;
+  padding: 10px 24px;
+  border-radius: 50px;
   text-decoration: none;
-  font-weight: 800;
-  font-size: 1.15rem;
+  font-weight: 700;
+  font-size: 1.05rem;
   transition: all 0.3s;
 }
 
 .header-tel-btn:hover {
-  background: #e65c00;
-  box-shadow: 0 8px 20px rgba(255, 108, 0, 0.25);
+  background: #001a38;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transform: translateY(-2px);
 }
 
