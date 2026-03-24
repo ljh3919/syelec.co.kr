@@ -15,7 +15,13 @@ if(G5_COMMUNITY_USE === false) {
 include_once(G5_PATH.'/head.sub.php');
 add_stylesheet('<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">', 0);
 add_stylesheet('<link rel="stylesheet" href="'.G5_THEME_URL.'/css/style.css">', 0);
+
+$body_class = "";
+if (defined('_INDEX_')) {
+    $body_class = "is-index";
+}
 ?>
+<body<?php echo $body_class ? ' class="'.$body_class.'"' : ''; ?>>
 <header class="header-wrapper">
     <div class="header-container">
         <a href="<?php echo G5_URL; ?>" class="logo" style="text-decoration:none; display:flex; align-items:center;">

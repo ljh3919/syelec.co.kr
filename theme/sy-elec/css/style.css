@@ -34,6 +34,21 @@ body {
   top: 0;
   z-index: 1000;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+/* Index Transparent Header */
+.is-index .header-wrapper:not(.scrolled) {
+  background: transparent;
+  box-shadow: none;
+  position: absolute;
+  width: 100%;
+}
+.is-index .header-wrapper:not(.scrolled) .gnb-link {
+  color: #fff;
+}
+.is-index .header-wrapper:not(.scrolled) .logo img {
+  filter: brightness(0) invert(1);
 }
 
 .header-container {

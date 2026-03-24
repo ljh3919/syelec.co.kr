@@ -197,6 +197,17 @@ include_once(G5_THEME_PATH.'/head.php');
     </div>
 </section>
 
+<script>
+window.addEventListener('scroll', function() {
+    const header = document.querySelector('.header-wrapper');
+    if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
+</script>
+
 <?php
 include_once(G5_THEME_PATH.'/tail.php');
 ?>
