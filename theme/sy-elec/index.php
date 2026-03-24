@@ -9,8 +9,8 @@ include_once(G5_THEME_PATH.'/head.php');
 <!-- 메인 히어로 배너 (ChatGPT Image.png 스타일) -->
 <section class="hero-section">
     <div class="hero-inner container">
-        <span class="hero-badge">현대차단기 전문기업</span>
-        <h2>HD 현대일렉트릭 특약점</h2>
+        <span class="hero-badge">산업용 전기제어 전문기업</span>
+        <h2>산업용 전기제어<br>· 배전반 제작 전문</h2>
         <p>10년 이상 현장 경험과 기술력으로 완성하는 맞춤 솔루션</p>
         
         <div class="hero-btns">
@@ -40,7 +40,7 @@ include_once(G5_THEME_PATH.'/head.php');
         </div>
 
         <!-- 카카오 상담 박스 -->
-        <!-- <div class="kakao-floating">
+        <div class="kakao-floating">
             <div class="k-header">
                 <div class="k-circle"><svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3c-4.971 0-9 3.134-9 7 0 2.478 1.637 4.659 4.14 5.92-.164.577-.591 2.083-.676 2.42-.1.396.143.392.3.287.123-.082 1.957-1.332 2.74-1.873.805.171 1.656.266 2.496.266 4.971 0 9-3.134 9-7s-4.029-7-9-7z"/></svg></div>
                 <div class="k-title-group">
@@ -49,7 +49,7 @@ include_once(G5_THEME_PATH.'/head.php');
                 </div>
             </div>
             <a href="tel:031-591-8310" class="k-button">031-591-8310</a>
-        </div> -->
+        </div>
     </div>
 </section>
 
