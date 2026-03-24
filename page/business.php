@@ -19,7 +19,7 @@ include_once(G5_THEME_PATH.'/head.php');
 
 
 <!-- subVisual -->
-<div id="sub_visual">
+<div id="sub_visual" class="sub_business">
   <div class="sub_visu_txt_area">
     <p class="sub_visu_txt">사업영역</p>
         <p class="sub_visu_line"></p>

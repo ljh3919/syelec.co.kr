@@ -18,7 +18,7 @@ include_once(G5_THEME_PATH.'/head.php');
 
 
 <!-- subVisual -->
-<div id="sub_visual">
+<div id="sub_visual" class="sub_product">
   <div class="sub_visu_txt_area">
     <p class="sub_visu_txt">제품정보</p>
         <p class="sub_visu_line"></p>
