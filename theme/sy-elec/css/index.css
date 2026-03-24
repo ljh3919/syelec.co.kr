@@ -29,20 +29,20 @@
 }
 
 .hero-inner h2 {
-    font-size: 7rem;
-    margin: 0 0 25px;
-    line-height: 1.05;
-    letter-spacing: -4.5px;
-    font-weight: 950;
-    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    font-size: 5.2rem;
+    margin: 0 0 20px;
+    line-height: 1.0;
+    letter-spacing: -2.5px;
+    font-weight: 900;
+    text-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
 .hero-inner p {
-    font-size: 1.8rem;
-    margin-bottom: 70px;
-    color: rgba(255, 255, 255, 0.95);
+    font-size: 1.6rem;
+    margin-bottom: 60px;
+    color: rgba(255, 255, 255, 0.9);
     font-weight: 500;
-    letter-spacing: -1px;
+    letter-spacing: -0.5px;
 }
 
 .hero-btns {
