@@ -1,13 +1,10 @@
 /* Hero Section (ChatGPT Style High Fidelity) */
 .hero-section {
-    background: linear-gradient(rgba(0, 15, 30, 0.4), rgba(0, 15, 30, 0.55)), url('../img/main_title_bg.png') no-repeat center center / cover;
-    padding: 240px 20px 160px;
+    background: linear-gradient(rgba(0, 15, 30, 0.45), rgba(0, 15, 30, 0.75)), url('../img/hero_bg.png') no-repeat center center / cover;
+    padding: 220px 20px 140px;
     color: var(--white);
     position: relative;
     overflow: hidden;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
 }
 .hero-inner {
     max-width: 1200px;
