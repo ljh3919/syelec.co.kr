@@ -62,7 +62,7 @@ include_once(G5_THEME_PATH.'/head.php');
         
         <div class="business-grid">
             <a href="<?php echo G5_URL ?>/page/product1.php" class="b-card">
-                <div class="b-img"><img src="<?php echo G5_THEME_URL ?>/img/business1.png" alt="배전반" onerror="this.src='https://via.placeholder.com/400x250/e0e0e0/ffffff?text=%EB%B0%B0%EC%A0%84%EB%B0%98'"></div>
+                <div class="b-img"><img src="<?php echo G5_THEME_URL ?>/img/bussnies_sub.png" alt="배전반"></div>
                 <div class="b-content">
                     <h4>배전반</h4>
                     <div class="b-tags"><span class="b-tag">저압/고압</span><span class="b-tag">동력/분전</span></div>
@@ -71,7 +71,7 @@ include_once(G5_THEME_PATH.'/head.php');
                 <div class="b-link">자세히 보기 &rarr;</div>
             </a>
             <a href="<?php echo G5_URL ?>/page/product1_8.php" class="b-card">
-                <div class="b-img"><img src="<?php echo G5_THEME_URL ?>/img/business2.png" alt="자동제어반" onerror="this.src='https://via.placeholder.com/400x250/e0e0e0/ffffff?text=%EC%9E%90%EB%8F%99%EC%A0%9C%EC%96%B4%EB%B0%98'"></div>
+                <div class="b-img"><img src="<?php echo G5_THEME_URL ?>/img/product_sub.png" alt="자동제어반"></div>
                 <div class="b-content">
                     <h4>자동제어반</h4>
                     <div class="b-tags"><span class="b-tag">PLC</span><span class="b-tag">인버터</span></div>
@@ -80,7 +80,7 @@ include_once(G5_THEME_PATH.'/head.php');
                 <div class="b-link">자세히 보기 &rarr;</div>
             </a>
             <a href="<?php echo G5_URL ?>/page/product_business.php" class="b-card">
-                <div class="b-img"><img src="<?php echo G5_THEME_URL ?>/img/business3.png" alt="자동화 설비" onerror="this.src='https://via.placeholder.com/400x250/e0e0e0/ffffff?text=%EC%9E%90%EB%8F%99%ED%99%94%EC%84%A4%EB%B9%84'"></div>
+                <div class="b-img"><img src="<?php echo G5_THEME_URL ?>/img/company_sub.png" alt="자동화 설비"></div>
                 <div class="b-content">
                     <h4>자동화 설비</h4>
                     <div class="b-tags"><span class="b-tag">FA System</span><span class="b-tag">SCADA</span></div>
@@ -89,7 +89,7 @@ include_once(G5_THEME_PATH.'/head.php');
                 <div class="b-link">자세히 보기 &rarr;</div>
             </a>
             <a href="<?php echo G5_URL ?>/page/estimate.php" class="b-card">
-                <div class="b-img"><img src="<?php echo G5_THEME_URL ?>/img/business4.png" alt="유지보수" onerror="this.src='https://via.placeholder.com/400x250/e0e0e0/ffffff?text=%EC%9C%A0%EC%A7%80%EB%B3%B4%EC%88%98'"></div>
+                <div class="b-img"><img src="<?php echo G5_THEME_URL ?>/img/support_sub.png" alt="유지보수"></div>
                 <div class="b-content">
                     <h4>유지보수</h4>
                     <div class="b-tags"><span class="b-tag">정기점검</span><span class="b-tag">긴급출동</span></div>
@@ -110,7 +110,7 @@ include_once(G5_THEME_PATH.'/head.php');
         
         <div class="portfolio-grid">
             <div class="p-card">
-                <div class="p-img"><img src="<?php echo G5_THEME_URL ?>/img/port1.png" alt="실적1" onerror="this.src='https://via.placeholder.com/500x350/002244/ffffff?text=%EC%8B%9C%EA%B3%B5%EC%8B%A4%EC%A0%811'"></div>
+                <div class="p-img"><img src="https://placehold.co/500x350/002244/ffffff?text=Portfolio+1" alt="실적1"></div>
                 <div class="p-content">
                     <span class="p-cat">공장</span>
                     <h4>OO전자 반도체 공장</h4>
@@ -119,7 +119,7 @@ include_once(G5_THEME_PATH.'/head.php');
                 </div>
             </div>
             <div class="p-card">
-                <div class="p-img"><img src="<?php echo G5_THEME_URL ?>/img/port2.png" alt="실적2" onerror="this.src='https://via.placeholder.com/500x350/002244/ffffff?text=%EC%8B%9C%EA%B3%B5%EC%8B%A4%EC%A0%812'"></div>
+                <div class="p-img"><img src="https://placehold.co/500x350/002244/ffffff?text=Portfolio+2" alt="실적2"></div>
                 <div class="p-content">
                     <span class="p-cat">빌딩</span>
                     <h4>OO타워 신축 전기공사</h4>
@@ -128,7 +128,7 @@ include_once(G5_THEME_PATH.'/head.php');
                 </div>
             </div>
             <div class="p-card">
-                <div class="p-img"><img src="<?php echo G5_THEME_URL ?>/img/port3.png" alt="실적3" onerror="this.src='https://via.placeholder.com/500x350/002244/ffffff?text=%EC%8B%9C%EA%B3%B5%EC%8B%A4%EC%A0%813'"></div>
+                <div class="p-img"><img src="https://placehold.co/500x350/002244/ffffff?text=Portfolio+3" alt="실적3"></div>
                 <div class="p-content">
                     <span class="p-cat">플랜트</span>
                     <h4>OO석유화학 설비</h4>
