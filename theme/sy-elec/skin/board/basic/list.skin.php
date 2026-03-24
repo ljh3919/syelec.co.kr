@@ -13,11 +13,11 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 ?>
 
 <!-- subVisual -->
-<div id="sub_visual">
+<div id="sub_visual" class="sub_support">
   <div class="sub_visu_txt_area">
     <p class="sub_visu_txt">고객지원</p>
         <p class="sub_visu_line"></p>
-    <p class="sub_visu_txt2">에스와이일렉트릭은 "고객 행복과 독창적 가치 실현"이라는<br> 슬로건 아래 새롭게 도약하는 젊고 역동적인 기업입니다.</p>
+    <p class="sub_visu_txt2">에스와이일렉트릭은 고객의 목소리에 귀 기울이며<br>최상의 솔루션과 서비스를 제공하기 위해 노력하고 있습니다.</p>
     </div>
 </div>
 <!--//Visual --> 

@@ -8,8 +8,51 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 <section id="bo_w">
     <h2 class="sound_only"><?php echo $g5['title'] ?></h2>
 
-    <!-- 게시물 작성/수정 시작 { -->
-    <form name="fwrite" id="fwrite" action="<?php echo $action_url ?>" onsubmit="return fwrite_submit(this);" method="post" enctype="multipart/form-data" autocomplete="off" style="width:<?php echo $width; ?>">
+<!-- 게시물 작성/수정 시작 { -->
+
+<!-- subVisual -->
+<div id="sub_visual" class="sub_support">
+  <div class="sub_visu_txt_area">
+    <p class="sub_visu_txt">고객지원</p>
+        <p class="sub_visu_line"></p>
+    <p class="sub_visu_txt2">에스와이일렉트릭은 고객의 목소리에 귀 기울이며<br>최상의 솔루션과 서비스를 제공하기 위해 노력하고 있습니다.</p>
+    </div>
+</div>
+<!--//Visual --> 
+
+<!-- contents -->
+<div id="contents">
+  <div id="leftmenu_wrap">
+  <div id="left_top">
+    <p class="left_top_txt">고객지원</p>
+  </div>
+  <div id="left_menu">
+    <a href="javascript:menu4sub1();" <? if ($bo_table == "notice") echo "class='on'" ?>>공지사항</a>  
+    <a href="javascript:menu4sub2();" <? if ($bo_table == "") echo "class='on'" ?>>온라인문의</a>   
+    <a href="javascript:menu4sub3();" <? if ($bo_table == "catalogue") echo "class='on'" ?>>카탈로그 다운로드</a> 
+  </div>
+  </div>
+<!--leftmenu_wrap-->
+
+  <div id="article_right">
+    <div id="article_top">
+      <ul>
+        <? if ($bo_table == "notice") { ?>
+        <li class="article_tit">공지사항</li>
+        <li class="location"><i class="fa fa-home" aria-hidden="true"></i> HOME &gt; 고객지원 &gt; 공지사항</li>
+        <? } if ($bo_table == "") { ?>
+        <li class="article_tit">온라인문의</li>
+        <li class="location"><i class="fa fa-home" aria-hidden="true"></i> HOME &gt; 고객지원 &gt; 온라인문의</li>
+        <? } if ($bo_table == "catalogue") { ?>
+        <li class="article_tit">카탈로그 다운로드</li>
+        <li class="location"><i class="fa fa-home" aria-hidden="true"></i> HOME &gt; 고객지원 &gt; 카탈로그 다운로드</li>
+        <? } ?>
+      </ul>
+    </div>
+    <!-- article_top -->
+    <div id="article">
+
+    <form name="fwrite" id="fwrite" action="<?php echo $action_url ?>" onsubmit="return fwrite_submit(this);" method="post" enctype="multipart/form-data" autocomplete="off" style="margin-top:40px; width:<?php echo $width; ?>">
     <input type="hidden" name="uid" value="<?php echo get_uniqid(); ?>">
     <input type="hidden" name="w" value="<?php echo $w ?>">
     <input type="hidden" name="bo_table" value="<?php echo $bo_table ?>">
@@ -165,6 +208,14 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
         <button type="submit" id="btn_submit" accesskey="s" class="btn_submit btn">작성완료</button>
     </div>
     </form>
+
+    </div><!-- article -->
+    </div><!--article_right-->
+    
+</div>
+<!--// contents -->
+<div class="blank"></div>
+
 
     <script>
     <?php if($write_min || $write_max) { ?>

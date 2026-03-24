@@ -39,11 +39,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 <!-- subVisual -->
-<div id="sub_visual">
+<div id="sub_visual" class="sub_support">
   <div class="sub_visu_txt_area">
     <p class="sub_visu_txt">고객지원</p>
         <p class="sub_visu_line"></p>
-    <p class="sub_visu_txt2">에스와이일렉트릭은 "고객 행복과 독창적 가치 실현"이라는<br> 슬로건 아래 새롭게 도약하는 젊고 역동적인 기업입니다.</p>
+    <p class="sub_visu_txt2">에스와이일렉트릭은 고객의 목소리에 귀 기울이며<br>최상의 솔루션과 서비스를 제공하기 위해 노력하고 있습니다.</p>
     </div>
 </div>
 <!--//Visual --> 
@@ -73,45 +73,53 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
     <!-- article_top -->
     <div id="article">
-      <img src="../images/estimate.png">
-      <form method="post" enctype="multipart/form-data" name="f1" id="f1">
-      <input type="hidden" name="mode" value="send">
-      <div class="map-tbl-con">
-            <table class="map-tbl">
-              <tbody><tr>
+      <div class="estimate-form-wrapper">
+        <form method="post" enctype="multipart/form-data" name="f1" id="f1">
+          <input type="hidden" name="mode" value="send">
+          <table class="estimate-table">
+              <tr>
                 <th>이름</th>
-                <td><input id="name" name="name" type="text" class="text large" style="width:600px; height:38px; border: 1px solid #cccccc; background-color: #f5f5f5;"></td>
+                <td><input id="name" name="name" type="text" class="form-input"></td>
               </tr>
               <tr>
                 <th>회사명 / 부서명</th>
-                <td><input id="company" name="company" type="text" class="text large" style="width:200px; height:38px; border: 1px solid #cccccc; background-color: #f5f5f5;"> / <input id="division" name="division" type="text" class="text large" style="width:200px; height:38px; border: 1px solid #cccccc; background-color: #f5f5f5;"></td>
+                <td>
+                  <div class="form-grid">
+                    <input id="company" name="company" type="text" class="form-input half" placeholder="회사명">
+                    <span>/</span>
+                    <input id="division" name="division" type="text" class="form-input half" placeholder="부서명">
+                  </div>
+                </td>
               </tr>
               <tr>
                 <th>전화번호</th>
-                <td><label for="tel1" style="display:none;">전화번호 첫번째 자리</label>
-                          <input type="text" id="tel1" name="tel1" class="text" maxlength="4" style="width:140px; height:38px; border: 1px solid #cccccc; background-color: #f5f5f5;">
-                          -
-                          <label for="tel2" style="display:none;">전화번호 가운데 자리</label>
-                          <input type="text" id="tel2" name="tel2" class="text" maxlength="4" style="width:140px; height:38px; border: 1px solid #cccccc; background-color: #f5f5f5;">
-                          -
-                          <label for="tel3" style="display:none;">전화번호 마지막 자리</label>
-                          <input type="text" id="tel3" name="tel3" class="text" maxlength="4" style="width:140px; height:38px; border: 1px solid #cccccc; background-color: #f5f5f5;"></td>
+                <td>
+                  <div class="form-grid">
+                    <input type="text" id="tel1" name="tel1" class="form-input small" maxlength="4">
+                    <span>-</span>
+                    <input type="text" id="tel2" name="tel2" class="form-input small" maxlength="4">
+                    <span>-</span>
+                    <input type="text" id="tel3" name="tel3" class="form-input small" maxlength="4">
+                  </div>
+                </td>
               </tr>
               <tr>
                 <th>이메일</th>
-                <td><label for="email1" style="display:none;">이메일 아이디</label>
-                          <input type="text" id="email1" name="email1" class="text" style="width:140px; height:38px; border: 1px solid #cccccc; background-color: #f5f5f5;">
-                          @
-                          <label for="email2" style="display:none;">이메일 도메인</label>
-                          <input type="text" id="email2" name="email2" class="text large" style="width:170px; height:38px; border: 1px solid #cccccc; background-color: #f5f5f5;"></td>
+                <td>
+                  <div class="form-grid">
+                    <input type="text" id="email1" name="email1" class="form-input half">
+                    <span>@</span>
+                    <input type="text" id="email2" name="email2" class="form-input half">
+                  </div>
+                </td>
               </tr>
               <tr>
                 <th>제목</th>
-                <td><input id="title" name="title" type="text" class="text large" style="width:600px; height:38px; border: 1px solid #cccccc; background-color: #f5f5f5;"></td>
+                <td><input id="title" name="title" type="text" class="form-input"></td>
               </tr>
               <tr>
                 <th>내용</th>
-                <td><textarea name="content" required="" style="width:600px; height:150px; border: 1px solid #cccccc; background-color: #f5f5f5;"></textarea></td>
+                <td><textarea name="content" required class="form-input form-textarea" placeholder="문의하실 내용을 상세히 입력해주세요."></textarea></td>
               </tr>
             </tbody></table>
           </div>
@@ -209,45 +217,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               f1.name.focus();
               return;
           }
-    if(f1.company.value == ''){
-              alert("업체명을 입력해주십시오.");
+          if(f1.company.value == ''){
+              alert("회사명을 입력해주십시오.");
               f1.company.focus();
               return;
           }
-          if(f1.email1.value == ''){
-              alert("이메일주소를 입력해주십시오.");
+          if(f1.email1.value == '' || f1.email2.value == ''){
+              alert("이메일주소를 완전하게 입력해주십시오.");
               f1.email1.focus();
               return;
           }
-          if(f1.email2.value == ''){
-              alert("이메일주소를 입력해주십시오.");
-              f1.email2.focus();
-              return;
-          }
-          if(f1.tel1.value == ''){
-              alert("연락처를 입력해주십시오.");
+          if(f1.tel1.value == '' || f1.tel2.value == '' || f1.tel3.value == ''){
+              alert("연락처를 모두 입력해주십시오.");
               f1.tel1.focus();
               return;
-          }
-          if(f1.tel2.value == ''){
-              alert("연락처를 입력해주십시오.");
-              f1.tel2.focus();
-              return;
-          }
-          if(f1.tel3.value == ''){
-              alert("연락처를 입력해주십시오.");
-              f1.tel3.focus();
-              return;
           }	
-          if(f1.agree.checked == ''){
+          if(!f1.agree.checked){
               alert("개인정보수집 및 이용에 동의해 주십시오.");
               f1.agree.focus();
               return;
           }
-          if(!confirm('온라인문의 메일을 전송하겠습니까?')) return;
+          if(!confirm('온라인문의를 전송하시겠습니까?')) return;
           f1.submit();
       }
-      
       </script>
     </div><!-- article -->
     </div><!--article_right-->
@@ -258,3 +250,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <?php
 include_once(G5_THEME_PATH.'/tail.php');
+?>

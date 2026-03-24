@@ -178,6 +178,36 @@ body {
 #sub_visual.sub_product {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/product_sub.png') no-repeat center center / cover;
 }
+#sub_visual.sub_support {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/support_sub.png') no-repeat center center / cover;
+}
+
+/* Online Estimate Form Styles */
+.estimate-form-wrapper { margin-top: 40px; }
+.estimate-table { width: 100%; border-collapse: collapse; margin-bottom: 30px; border-top: 2px solid var(--primary); }
+.estimate-table th { background: #f8f9fa; width: 180px; padding: 20px; text-align: left; border-bottom: 1px solid var(--border); font-weight: 700; color: var(--text-dark); }
+.estimate-table td { padding: 15px 20px; border-bottom: 1px solid var(--border); }
+.form-input { 
+  width: 100%; height: 45px; border: 1px solid var(--border); border-radius: 6px; padding: 0 15px; font-size: 1rem; color: var(--text-dark); background: #fafafa; transition: all 0.3s;
+}
+.form-input:focus { border-color: var(--primary); outline: none; background: #fff; box-shadow: 0 0 0 3px rgba(0,75,155,0.05); }
+.form-textarea { height: 180px; padding: 15px; resize: vertical; line-height: 1.6; }
+.form-grid { display: flex; align-items: center; gap: 10px; }
+.form-grid span { color: #888; }
+.form-input.half { width: 200px; }
+.form-input.small { width: 140px; }
+
+.agree-box { background: #f8f9fa; border: 1px solid var(--border); border-radius: 10px; padding: 30px; margin-bottom: 40px; }
+.agree-content { height: 150px; overflow-y: scroll; background: #fff; border: 1px solid #eee; padding: 20px; font-size: 0.9rem; color: #777; line-height: 1.7; margin-bottom: 20px; }
+.agree-check { display: flex; align-items: center; justify-content: center; gap: 10px; font-weight: 700; }
+.agree-check input[type="checkbox"] { width: 18px; height: 18px; cursor: pointer; }
+
+.form-submit-area { text-align: center; margin-top: 50px; }
+.btn-submit-large { 
+  width: 250px; height: 60px; background: var(--primary); color: #fff; border: none; border-radius: 50px; font-size: 1.2rem; font-weight: 800; cursor: pointer; transition: all 0.3s;
+}
+.btn-submit-large:hover { background: var(--secondary); transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,75,155,0.2); }
+
 .sub_visu_txt { font-size: 2.5rem; font-weight: bold; margin: 0; letter-spacing: -1px; position: relative; z-index: 1; }
 .sub_visu_line { width: 50px; height: 4px; background: var(--white); margin: 20px auto; opacity: 0.5; position: relative; z-index: 1; }
 .sub_visu_txt2 { font-size: 1.2rem; opacity: 0.9; position: relative; z-index: 1; }
