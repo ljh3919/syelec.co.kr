@@ -39,6 +39,17 @@ include_once(G5_THEME_PATH.'/head.php');
             </div>
         </div>
 
+        <!-- 카카오 상담 박스 -->
+        <div class="kakao-floating">
+            <div class="k-header">
+                <div class="k-circle"><svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3c-4.971 0-9 3.134-9 7 0 2.478 1.637 4.659 4.14 5.92-.164.577-.591 2.083-.676 2.42-.1.396.143.392.3.287.123-.082 1.957-1.332 2.74-1.873.805.171 1.656.266 2.496.266 4.971 0 9-3.134 9-7s-4.029-7-9-7z"/></svg></div>
+                <div class="k-title-group">
+                    <span class="k-stxt">실시간 빠른 답변</span>
+                    <span class="k-mtxt">카카오톡 상담</span>
+                </div>
+            </div>
+            <a href="tel:031-591-8310" class="k-button">031-591-8310</a>
+        </div>
     </div>
 </section>
 
