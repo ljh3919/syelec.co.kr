@@ -459,9 +459,9 @@
     background: var(--point);
     color: #fff;
     padding: 18px 45px;
-    border-radius: 50px;
+    border-radius: 15px;
     font-size: 1.3rem;
-    font-weight: 900;
+    font-weight: 700;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
@@ -474,9 +474,9 @@
     border: 1px solid rgba(255, 255, 255, 0.2);
     color: #fff;
     padding: 18px 45px;
-    border-radius: 50px;
+    border-radius: 15px;
     font-size: 1.3rem;
-    font-weight: 900;
+    font-weight: 700;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
