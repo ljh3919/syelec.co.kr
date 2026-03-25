@@ -106,7 +106,7 @@ include_once(G5_THEME_PATH.'/head.php');
                 <div class="b-content">
                     <h4>배전반</h4>
                     <div class="b-tags"><span class="b-tag">저압/고압</span><span class="b-tag">동력/분전</span></div>
-                    <p class="b-desc">산업용·건물용 전력 분배 시스템 구축</p>
+                    <p class="b-desc">산업용·건물용 전력 분배</p>
                 </div>
                 <div class="b-link">자세히 보기 &rarr;</div>
             </a>
@@ -115,7 +115,7 @@ include_once(G5_THEME_PATH.'/head.php');
                 <div class="b-content">
                     <h4>자동제어반</h4>
                     <div class="b-tags"><span class="b-tag">PLC</span><span class="b-tag">인버터</span></div>
-                    <p class="b-desc">공장 자동화 제어 시스템 정밀 설계</p>
+                    <p class="b-desc">공장 자동화 제어 시스템</p>
                 </div>
                 <div class="b-link">자세히 보기 &rarr;</div>
             </a>
@@ -124,7 +124,7 @@ include_once(G5_THEME_PATH.'/head.php');
                 <div class="b-content">
                     <h4>자동화 설비</h4>
                     <div class="b-tags"><span class="b-tag">FA System</span><span class="b-tag">SCADA</span></div>
-                    <p class="b-desc">생산라인 지능형 자동화 구축 솔루션</p>
+                    <p class="b-desc">생산라인 자동화 구축</p>
                 </div>
                 <div class="b-link">자세히 보기 &rarr;</div>
             </a>
@@ -133,7 +133,7 @@ include_once(G5_THEME_PATH.'/head.php');
                 <div class="b-content">
                     <h4>유지보수</h4>
                     <div class="b-tags"><span class="b-tag">정기점검</span><span class="b-tag">긴급출동</span></div>
-                    <p class="b-desc">A/S 및 설비 진단 유지관리 서비스</p>
+                    <p class="b-desc">A/S 및 설비 진단</p>
                 </div>
                 <div class="b-link">자세히 보기 &rarr;</div>
             </a>
