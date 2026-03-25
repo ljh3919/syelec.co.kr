@@ -112,7 +112,7 @@
 
 .kakao-floating {
     position: absolute;
-    bottom: -80px;
+    bottom: -20px;
     right: 0;
     width: 300px;
     background: #111;
@@ -177,7 +177,7 @@
     background: #1e1e1e;
     color: #ffde00;
     text-align: center;
-    height: 70px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
