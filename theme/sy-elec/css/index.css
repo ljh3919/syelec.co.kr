@@ -1,7 +1,7 @@
 /* Hero Section (ChatGPT Style High Fidelity) */
 .hero-section {
     background: linear-gradient(rgba(0, 15, 30, 0.4), rgba(0, 15, 30, 0.7)), url('../img/hero_bg.png') no-repeat center center / cover;
-    padding: 100px 20px 60px;
+    padding: 100px 20px 100px;
     color: var(--white);
     position: relative;
     overflow: hidden;
@@ -194,7 +194,7 @@
 
 /* Business Section */
 .business-section {
-    padding: 50px 0;
+    padding: 140px 0;
     background: #fff;
 }
 
@@ -287,7 +287,7 @@
 /* Portfolio Section (Dark Contrast) */
 .portfolio-section {
     background: #001226;
-    padding: 120px 0;
+    padding: 140px 0;
     color: var(--white);
 }
 
