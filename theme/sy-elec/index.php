@@ -98,7 +98,7 @@ include_once(G5_THEME_PATH.'/head.php');
     <div class="container">
         <p class="st">OUR BUSINESS</p>
         <h2 class="mt">핵심 제품 & 사업 분야</h2>
-        <p class="sd">산업 현장에 최적화된 전기 제어 솔루션을 제공합니다</p>
+        <p class="sd">현대인버터, 배선용차단기, 누전차단기</p>
         
         <div class="business-grid">
             <a href="<?php echo G5_URL ?>/page/product1.php" class="b-card">
@@ -193,31 +193,31 @@ include_once(G5_THEME_PATH.'/head.php');
         <div class="why-grid">
             <div class="why-item">
                 <i class="svg-icon">
-                    <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+                    <svg width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
                 </i>
                 <h4>10년 이상 경력</h4>
-                <p>풍부한 현장 경험과 노하우</p>
+                <p>배전반 및 자동 제어 분야의<br>풍부한 현장 노하우</p>
             </div>
             <div class="why-item">
                 <i class="svg-icon">
-                    <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                    <svg width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
                 </i>
                 <h4>100% 맞춤 제작</h4>
-                <p>고객 요구사항 완벽 반영</p>
+                <p>고객사의 특수 여건을 반영한<br>최적의 제품 설계</p>
             </div>
             <div class="why-item">
                 <i class="svg-icon">
-                    <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                    <svg width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
                 </i>
                 <h4>빠른 납기 대응</h4>
-                <p>체계적인 생산 시스템</p>
+                <p>체계적인 생산 시스템 기반의<br>철저한 납기 준수</p>
             </div>
             <div class="why-item">
                 <i class="svg-icon">
-                    <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    <svg width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
                 </i>
                 <h4>책임 A/S 보장</h4>
-                <p>24시간 긴급 출동 지원</p>
+                <p>설치부터 사후 관리까지<br>끝까지 책임집니다</p>
             </div>
         </div>
     </div>

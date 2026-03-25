@@ -238,7 +238,7 @@
 }
 
 .b-content {
-    padding: 35px 25px 30px;
+    padding: 35px 25px 5px;
     text-align: center;
 }
 
@@ -246,7 +246,7 @@
     font-size: 1.7rem;
     font-weight: 900;
     color: #111;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
 }
 
 .b-tags {
@@ -254,37 +254,40 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
 }
 
 .b-tag {
     background: #f0f7ff;
-    color: var(--secondary);
-    padding: 5px 14px;
+    color: #3b82f6;
+    padding: 4px 12px;
     border-radius: 4px;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     font-weight: 800;
 }
 
 .b-desc {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     color: #777;
     line-height: 1.6;
+    margin-bottom: 25px;
 }
 
 .b-link {
+    background: #fcfcfc;
     border-top: 1px solid #f0f0f0;
-    padding: 20px;
+    padding: 18px;
     text-align: center;
     font-weight: 800;
-    color: var(--secondary);
-    font-size: 1.05rem;
+    color: #3b82f6;
+    font-size: 1rem;
+    display: block;
 }
 
 /* Portfolio Section (Dark Contrast) */
 .portfolio-section {
     background: #001226;
-    padding: 140px 0;
+    padding: 120px 0;
     color: var(--white);
 }
 
@@ -299,10 +302,15 @@
     background: #002244;
     border-radius: 12px;
     overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.p-card:hover {
+    transform: translateY(-10px);
 }
 
 .p-img {
-    height: 260px;
+    height: 280px;
 }
 
 .p-img img {
@@ -312,15 +320,15 @@
 }
 
 .p-content {
-    padding: 40px 30px;
+    padding: 35px 30px;
 }
 
 .p-cat {
     background: #004b9b;
     display: inline-block;
-    padding: 5px 18px;
+    padding: 6px 16px;
     border-radius: 4px;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     font-weight: 800;
     margin-bottom: 20px;
 }
@@ -329,28 +337,35 @@
     font-size: 1.8rem;
     font-weight: 900;
     margin-bottom: 12px;
+    color: #fff;
 }
 
 .p-content p {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     color: #a0aec0;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 
 .p-meta {
     display: flex;
-    gap: 20px;
-    opacity: 0.5;
-    font-size: 1rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
-    padding-top: 20px;
+    gap: 15px;
+    color: #6a7c92;
+    font-size: 0.95rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 25px;
+}
+
+.p-meta span:not(:last-child)::after {
+    content: "|";
+    margin-left: 15px;
+    opacity: 0.3;
 }
 
 .btn-p-all {
     display: inline-block;
     margin-top: 60px;
     padding: 18px 55px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.4);
     border-radius: 50px;
     color: #fff;
     text-decoration: none;
@@ -379,33 +394,36 @@
 }
 
 .why-item i {
-    width: 100px;
-    height: 100px;
-    background: var(--primary);
+    width: 90px;
+    height: 90px;
+    background: #002855;
     color: #fff;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto 30px;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     transition: 0.3s;
 }
 
 .why-item:hover i {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 40, 85, 0.25);
+    transform: translateY(-10px) rotate(5deg);
+    background: var(--point);
+    box-shadow: 0 15px 35px rgba(255, 111, 0, 0.3);
 }
 
 .why-item h4 {
-    font-size: 1.6rem;
-    font-weight: 900;
-    margin-bottom: 10px;
+    font-size: 1.7rem;
+    font-weight: 950;
+    color: #111;
+    margin-bottom: 15px;
 }
 
 .why-item p {
-    font-size: 1.1rem;
-    color: #777;
+    font-size: 1.15rem;
+    color: #666;
+    line-height: 1.6;
 }
 
 /* Bottom CTA Wide Bar */
@@ -468,29 +486,29 @@
 
 /* Global Title Styles */
 .st {
-    font-size: 1.2rem;
-    color: #ff6c00;
-    font-weight: 900;
+    font-size: 1.1rem;
+    color: var(--point);
+    font-weight: 800;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
 .mt {
-    font-size: 4rem;
-    font-weight: 900;
-    letter-spacing: -2px;
+    font-size: 3.2rem;
+    font-weight: 950;
+    letter-spacing: -2.5px;
     color: #111;
     margin-bottom: 25px;
     text-align: center;
 }
 
 .sd {
-    font-size: 1.4rem;
-    color: #555;
+    font-size: 1.25rem;
+    color: #666;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto 60px;
     line-height: 1.6;
     text-align: center;
 }
