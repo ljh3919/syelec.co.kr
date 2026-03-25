@@ -11,7 +11,7 @@ include_once(G5_THEME_PATH.'/head.php');
     <div class="hero-inner container">
         <span class="hero-badge">현대차단기 전문기업</span>
         <div class="hero-hd-logo">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1307.56 198.43" width="500" height="auto">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1307.56 198.43" width="400" height="auto">
                 <style>
                     .hd-cls-1 { fill: #fff; }
                     .hd-cls-2 { fill: #38d430; }
@@ -38,7 +38,8 @@ include_once(G5_THEME_PATH.'/head.php');
                         </g>
                     </g>
                 </g>
-            </svg>특약점
+            </svg>
+            <span class="logo-sub">특약점</span>
         </div>
         <p>10년 이상 현장 경험과 기술력으로 완성하는 맞춤 솔루션</p>
         
