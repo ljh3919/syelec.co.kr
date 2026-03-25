@@ -44,7 +44,7 @@ include_once(G5_THEME_PATH.'/head.php');
         <p>10년 이상 현장 경험과 기술력으로 완성하는 맞춤 솔루션</p>
         
         <div class="hero-btns">
-            <a href="tel:010-1234-5678" class="btn-blue">
+            <a href="tel:031-591-8310" class="btn-blue">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="margin-right:15px;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
                 전화 상담하기
             </a>
