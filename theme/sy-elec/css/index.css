@@ -114,7 +114,7 @@
     position: absolute;
     bottom: -80px;
     right: 0;
-    width: 310px;
+    width: 300px;
     background: #111;
     border-radius: 15px;
     overflow: hidden;
@@ -143,8 +143,8 @@
 }
 
 .k-circle {
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     background: transparent;
     display: flex;
     align-items: center;

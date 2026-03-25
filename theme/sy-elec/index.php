@@ -74,7 +74,7 @@ include_once(G5_THEME_PATH.'/head.php');
             <div class="k-header">
                 <div class="k-header-row">
                     <div class="k-circle">
-                        <svg viewBox="0 0 24 24" width="22" height="22">
+                        <svg viewBox="0 0 24 24" width="40" height="40">
                             <path fill="#191919" d="M12 3c-4.97 0-9 3.13-9 7 0 2.48 1.63 4.67 4.14 5.92-.164.58-.59 2.08-.676 2.42-.1.4.143.39.3.29.123-.08 1.957-1.33 2.74-1.87.8.17 1.65.26 2.5.26 4.971 0 9-3.134 9-7s-4.029-7-9-7z"/>
                             <text x="12" y="12.5" text-anchor="middle" font-size="5" font-weight="900" fill="#FEE500" style="font-family:sans-serif;">TALK</text>
                         </svg>
