@@ -130,7 +130,7 @@
 }
 
 .k-header {
-    padding: 30px 20px 25px;
+    padding: 20px 10px 15px;
     background: #FEE500;
     text-align: center;
 }
@@ -144,8 +144,8 @@
 }
 
 .k-circle {
-    width: 38px;
-    height: 38px;
+    width: 44px;
+    height: 44px;
     background: transparent;
     display: flex;
     align-items: center;
@@ -154,8 +154,8 @@
 }
 
 .k-circle svg {
-    width: 28px;
-    height: 28px;
+    width: 36px;
+    height: 36px;
 }
 
 .k-mtxt {
