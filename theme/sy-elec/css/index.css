@@ -560,16 +560,21 @@
     }
     
     .f-cta-btns {
-        flex-direction: column;
+        flex-direction: row; /* 가로 배치로 원상 복구 */
         width: 100%;
-        gap: 12px;
+        gap: 8px; /* 간격 축소 */
     }
     
     .btn-cta-o, .btn-cta-k {
-        width: 100%;
-        padding: 15px 20px;
-        font-size: 1.1rem;
+        flex: 1; /* 동일 너비 부여 */
+        padding: 12px 10px; /* 여백 축소 */
+        font-size: 0.9rem; /* 폰트 크기 대폭 축소 (한 줄에 넣기 위해) */
         white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+    }
+
+    .btn-cta-o svg, .btn-cta-k .k-header-row {
+        transform: scale(0.8); /* 아이콘 크기 축소 */
+        margin-right: 5px !important;
     }
 
     .m-br {
