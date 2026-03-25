@@ -227,8 +227,8 @@ include_once(G5_THEME_PATH.'/head.php');
 <section class="footer-cta">
     <div class="container f-cta-inner">
         <div>
-            <h2>지금 바로 전문가와 상담하세요</h2>
-            <p>도면 검토부터 견적까지 무료로 도와드립니다</p>
+            <h2>배전반 설계부터 정밀 견적까지</h2>
+            <p>SY ELECTRIC 전문가가 도면 검토 및 기술 상담을 무료로 지원합니다.</p>
         </div>
         <div class="f-cta-btns">
             <a href="tel:031-591-8310" class="btn-cta-o">
