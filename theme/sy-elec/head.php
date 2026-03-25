@@ -14,7 +14,7 @@ if(G5_COMMUNITY_USE === false) {
 
 include_once(G5_PATH.'/head.sub.php');
 add_stylesheet('<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">', 0);
-add_stylesheet('<link rel="stylesheet" href="'.G5_THEME_URL.'/css/style.css">', 0);
+add_stylesheet('<link rel="stylesheet" href="'.G5_THEME_URL.'/css/style.css?v='.time().'">', 0);
 ?>
 <header class="header-wrapper">
     <div class="header-container">
