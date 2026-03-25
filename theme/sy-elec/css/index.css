@@ -1,7 +1,7 @@
 /* Hero Section (ChatGPT Style High Fidelity) */
 .hero-section {
     background: linear-gradient(rgba(0, 15, 30, 0.4), rgba(0, 15, 30, 0.7)), url('../img/hero_bg.png') no-repeat center center / cover;
-    padding: 100px 20px 80px;
+    padding: 100px 20px 60px;
     color: var(--white);
     position: relative;
     overflow: hidden;
