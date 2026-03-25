@@ -226,6 +226,10 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/product_sub.png') no-repeat center center / cover;
 }
 
+#sub_visual.sub_mccb {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('../img/hd_hyundai_mccb_banner.png') no-repeat center center / cover !important;
+}
+
 #sub_visual.sub_support {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/support_sub.png') no-repeat center center / cover;
 }
