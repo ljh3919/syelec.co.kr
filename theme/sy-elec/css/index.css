@@ -571,4 +571,12 @@
         font-size: 1.1rem;
         white-space: nowrap; /* 텍스트 줄바꿈 방지 */
     }
+
+    .m-br {
+        display: inline !important;
+    }
+}
+
+.m-br {
+    display: none;
 }
