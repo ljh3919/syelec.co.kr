@@ -148,21 +148,21 @@
     justify-content: center;
 }
 
-.k-stxt {
-    color: #191919;
-    font-size: 0.9rem;
-    font-weight: 600;
-    opacity: 0.7;
-    line-height: 1.2;
-}
-
 .k-mtxt {
     color: #191919;
-    font-size: 1.35rem;
+    font-size: 1.45rem;
     font-weight: 900;
     letter-spacing: -0.5px;
+    line-height: 1.1;
+}
+
+.k-stxt {
+    color: #191919;
+    font-size: 0.95rem;
+    font-weight: 700;
+    opacity: 0.8;
     line-height: 1.2;
-    margin-top: 2px;
+    margin-top: 3px;
 }
 
 .k-button {
@@ -432,21 +432,30 @@
 .btn-cta-o {
     background: var(--point);
     color: #fff;
-    padding: 22px 50px;
-    border-radius: 4px;
-    font-size: 1.4rem;
+    padding: 18px 45px;
+    border-radius: 50px;
+    font-size: 1.3rem;
     font-weight: 900;
     text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
 }
 
 .btn-cta-k {
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: #001226;
+    border: 1px solid rgba(255, 255, 255, 0.2);
     color: #fff;
-    padding: 22px 50px;
-    border-radius: 4px;
-    font-size: 1.4rem;
+    padding: 18px 45px;
+    border-radius: 50px;
+    font-size: 1.3rem;
     font-weight: 900;
     text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
 }
 
 /* Global Title Styles */

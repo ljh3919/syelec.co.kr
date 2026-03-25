@@ -39,13 +39,17 @@ include_once(G5_THEME_PATH.'/head.php');
             </div>
         </div>
 
-        <!-- 카카오 상담 박스 -->
+        <!-- 카카오 상담 박스 (ChatGPT Image.png 스타일로 수정) -->
         <div class="kakao-floating">
             <div class="k-header">
-                <div class="k-circle"><svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3c-4.971 0-9 3.134-9 7 0 2.478 1.637 4.659 4.14 5.92-.164.577-.591 2.083-.676 2.42-.1.396.143.392.3.287.123-.082 1.957-1.332 2.74-1.873.805.171 1.656.266 2.496.266 4.971 0 9-3.134 9-7s-4.029-7-9-7z"/></svg></div>
+                <div class="k-circle">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 3c-4.971 0-9 3.134-9 7 0 2.478 1.637 4.659 4.14 5.92-.164.577-.591 2.083-.676 2.42-.1.396.143.392.3.287.123-.082 1.957-1.332 2.74-1.873.805.171 1.656.266 2.496.266 4.971 0 9-3.134 9-7s-4.029-7-9-7z"/>
+                    </svg>
+                </div>
                 <div class="k-title-group">
-                    <span class="k-stxt">실시간 빠른 답변</span>
                     <span class="k-mtxt">카카오톡 상담</span>
+                    <span class="k-stxt">실시간 빠른 답변</span>
                 </div>
             </div>
             <a href="tel:031-591-8310" class="k-button">031-591-8310</a>
@@ -191,8 +195,14 @@ include_once(G5_THEME_PATH.'/head.php');
             <p>도면 검토부터 견적까지 무료로 도와드립니다</p>
         </div>
         <div class="f-cta-btns">
-            <a href="tel:031-591-8310" class="btn-cta-o">031-591-8310</a>
-            <a href="<?php echo G5_URL ?>/page/estimate.php" class="btn-cta-k">견적 문의하기</a>
+            <a href="tel:031-591-8310" class="btn-cta-o">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="margin-right:15px;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                031-591-8310
+            </a>
+            <a href="javascript:void(0);" onclick="alert('카카오톡 상담 준비중입니다.')" class="btn-cta-k">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="margin-right:15px;"><path d="M12 3c-4.971 0-9 3.134-9 7 0 2.478 1.637 4.659 4.14 5.92-.164.577-.591 2.083-.676 2.42-.1.396.143.392.3.287.123-.082 1.957-1.332 2.74-1.873.805.171 1.656.266 2.496.266 4.971 0 9-3.134 9-7s-4.029-7-9-7z"/></svg>
+                카톡 상담하기
+            </a>
         </div>
     </div>
 </section>
