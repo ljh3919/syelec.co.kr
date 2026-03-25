@@ -133,12 +133,10 @@
 .k-circle {
     width: 34px;
     height: 34px;
-    background: #191919;
-    border-radius: 50%;
+    background: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FEE500;
     flex-shrink: 0;
 }
 
