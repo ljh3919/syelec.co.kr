@@ -150,30 +150,30 @@ include_once(G5_THEME_PATH.'/head.php');
         
         <div class="portfolio-grid">
             <div class="p-card">
-                <div class="p-img"><img src="https://placehold.co/500x350/002244/ffffff?text=Portfolio+1" alt="실적1"></div>
+                <div class="p-img"><img src="<?php echo G5_THEME_URL ?>/img/port_1_ai.png" alt="반도체 공장"></div>
                 <div class="p-content">
-                    <span class="p-cat">공장</span>
-                    <h4>OO전자 반도체 공장</h4>
-                    <p>메인 배전반 15면 설치 및 시운전</p>
-                    <div class="p-meta"><span>2024.01</span><span>3주</span><span>경기도 화성</span></div>
+                    <span class="p-cat">반도체 시설</span>
+                    <h4>S사 반도체 신규 클린룸</h4>
+                    <p>초정밀 고압 배전반 및 무정전 전원 공급 시스템(UPS) 구축</p>
+                    <div class="p-meta"><span>2024.03</span><span>배전반/UPS</span></div>
                 </div>
             </div>
             <div class="p-card">
-                <div class="p-img"><img src="https://placehold.co/500x350/002244/ffffff?text=Portfolio+2" alt="실적2"></div>
+                <div class="p-img"><img src="<?php echo G5_THEME_URL ?>/img/port_2_ai.png" alt="상업 오피스 빌딩"></div>
                 <div class="p-content">
-                    <span class="p-cat">빌딩</span>
-                    <h4>OO타워 신축 전기공사</h4>
-                    <p>분전반 및 EPS 실측 제작·설치</p>
-                    <div class="p-meta"><span>2023.11</span><span>4주</span><span>서울 강남</span></div>
+                    <span class="p-cat">상업 빌딩</span>
+                    <h4>B 랜드마크 스퀘어</h4>
+                    <p>통합 건물 에너지 관리 시스템(BEMS) 및 분전반 설치</p>
+                    <div class="p-meta"><span>2023.11</span><span>분전반/BEMS</span></div>
                 </div>
             </div>
             <div class="p-card">
-                <div class="p-img"><img src="https://placehold.co/500x350/002244/ffffff?text=Portfolio+3" alt="실적3"></div>
+                <div class="p-img"><img src="<?php echo G5_THEME_URL ?>/img/port_3_ai.png" alt="석유화학 플랜트"></div>
                 <div class="p-content">
-                    <span class="p-cat">플랜트</span>
-                    <h4>OO석유화학 설비</h4>
-                    <p>제어반-PLC 시스템 고도화 구축</p>
-                    <div class="p-meta"><span>2023.08</span><span>3주</span><span>울산</span></div>
+                    <span class="p-cat">석유화학 플랜트</span>
+                    <h4>L사 석유화학 자동화 현장</h4>
+                    <p>방폭형 제어반 및 분산 제어 시스템(DCS) 통합 시공</p>
+                    <div class="p-meta"><span>2023.08</span><span>방폭제어/DCS</span></div>
                 </div>
             </div>
         </div>
