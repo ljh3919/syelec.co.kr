@@ -749,11 +749,6 @@ body {
     gap: 10px;
   }
 
-  /* Mobile Header Styles */
-  .header-wrapper {
-    height: 70px;
-  }
-
   .header-container {
     padding: 0 20px;
   }
