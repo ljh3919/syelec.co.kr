@@ -116,7 +116,7 @@
     right: 0;
     width: 310px;
     background: #111;
-    border-radius: 30px;
+    border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
     z-index: 10;
@@ -130,7 +130,7 @@
 }
 
 .k-header {
-    padding: 28px 10px 22px;
+    padding: 10px 10px 10px;
     background: #ffde00;
     text-align: center;
 }
@@ -144,8 +144,8 @@
 }
 
 .k-circle {
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
     background: transparent;
     display: flex;
     align-items: center;
@@ -161,7 +161,7 @@
 .k-mtxt {
     color: #000;
     font-size: 1.75rem;
-    font-weight: 900;
+    font-weight: 700;
     letter-spacing: -1px;
     line-height: 1;
 }
@@ -183,7 +183,7 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 1.9rem;
     letter-spacing: 0.5px;
     transition: background 0.2s;
