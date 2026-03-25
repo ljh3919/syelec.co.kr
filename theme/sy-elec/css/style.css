@@ -956,12 +956,12 @@ body {
 
 .float-btn.kakao {
   background: #fee500;
-  color: #191919;
+  color: #3C1E1E;
 }
 
 .float-btn.phone {
-  background: var(--text-dark);
-  color: var(--white);
+  background: var(--primary);
+  color: white;
 }
 
 .float-btn svg {
