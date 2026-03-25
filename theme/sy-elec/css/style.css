@@ -227,7 +227,7 @@ body {
 }
 
 #sub_visual.sub_mccb {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url('../img/hd_hyundai_mccb_banner.png') no-repeat center center / cover !important;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url('../img/hd_hyundai_mccb_panoramic.png') no-repeat center center / cover !important;
 }
 
 #sub_visual.sub_support {
@@ -363,6 +363,12 @@ body {
   box-shadow: 0 10px 20px rgba(0, 75, 155, 0.2);
 }
 
+.sub_visu_txt_area {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+}
+
 .sub_visu_txt {
   font-size: 2.5rem;
   font-weight: bold;
@@ -376,7 +382,7 @@ body {
   width: 50px;
   height: 4px;
   background: var(--white);
-  margin: 20px auto;
+  margin: 20px 0;
   opacity: 0.5;
   position: relative;
   z-index: 1;
