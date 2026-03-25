@@ -150,11 +150,10 @@
 
 .k-stxt {
     color: #191919;
-    font-size: 1rem;
-    font-weight: 700;
-    opacity: 0.6;
-    line-height: 1;
-    letter-spacing: -0.5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    opacity: 0.7;
+    line-height: 1.2;
 }
 
 .k-mtxt {
