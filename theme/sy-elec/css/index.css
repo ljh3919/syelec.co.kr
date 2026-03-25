@@ -592,20 +592,18 @@
     }
 
     .f-cta-inner {
-        flex-direction: column;
+        display: flex; /* 플렉스 레이아웃 유지 */
+        flex-direction: column; /* 세로 정렬로 변경하여 위/아래 구분 */
         text-align: center;
-        gap: 30px;
+        gap: 45px; /* 텍스트와 버튼 영역 사이의 간격을 확보 */
     }
-
-    .f-cta-inner h2 {
-        font-size: 1.6rem;
+    
+    .f-cta-inner > div:first-child {
+        order: 1; /* 텍스트 영역을 위로 (사용자 요청: 아래에 버튼 위치) */
     }
-
-    .f-cta-inner p {
-        font-size: 1.1rem;
-    }
-
+    
     .f-cta-btns {
+        order: 2; /* 버튼 영역을 아래로 강제 고정 */
         flex-direction: column;
         width: 100%;
         gap: 12px;
@@ -619,12 +617,4 @@
         white-space: nowrap;
         /* 텍스트 줄바꿈 방지 */
     }
-
-    .m-br {
-        display: inline !important;
-    }
-}
-
-.m-br {
-    display: none;
 }
