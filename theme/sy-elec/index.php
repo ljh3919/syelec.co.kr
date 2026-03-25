@@ -43,11 +43,11 @@ include_once(G5_THEME_PATH.'/head.php');
         <a href="https://pf.kakao.com/_RxfuxgG/chat" target="_blank" class="kakao-floating">
             <div class="k-header">
                 <div class="k-circle">
-                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3c-4.97 0-9 3.13-9 7 0 2.48 1.64 4.66 4.14 5.92-.16.58-.59 2.08-.68 2.42-.1.4.14.39.3.29.12-.08 1.96-1.33 2.74-1.87.81.17 1.66.27 2.5.27 4.97 0 9-3.13 9-7 0-3.87-4.03-7-9-7z"/></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3c-4.97 0-9 3.13-9 7 0 2.48 1.64 4.66 4.14 5.92-.16.58-.59 2.08-.68 2.42-.1.4.14.39.3.29 1.1-.73 2.37-1.57 2.71-1.82.8.18 1.63.26 2.53.26 4.97 0 9-3.13 9-7 0-3.87-4.03-7-9-7z"/></svg>
                 </div>
                 <div class="k-title-group">
-                    <span class="k-stxt">실시간 빠른 답변</span>
-                    <span class="k-mtxt">카카오톡 상담</span>
+                    <span class="k-stxt">친절하고 빠른 답변</span>
+                    <span class="k-mtxt">카카오톡 실시간 상담</span>
                 </div>
             </div>
             <div class="k-button">031-591-8310</div>
