@@ -721,97 +721,16 @@ body {
   }
 }
 
-/* Mobile Header Styles (Default hidden) */
-.m-menu-btn { display: none; }
-
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .header-container {
-    padding: 0 20px;
+    padding: 0 15px;
   }
 
-  .header-wrapper {
-      height: 70px;
-  }
-  
-  .gnb {
-      position: fixed;
-      top: 70px;
-      left: 100%;
-      width: 100%;
-      height: calc(100vh - 70px);
-      background: #fff;
-      transition: 0.3s;
-      z-index: 1000;
-      display: flex !important;
-      flex-direction: column;
-      justify-content: flex-start !important;
-      padding: 40px 20px;
-      box-shadow: -10px 0 30px rgba(0,0,0,0.05);
-  }
-  
-  .mobile-active .gnb {
-      left: 0;
-  }
-  
   .gnb-list {
-      display: flex !important;
-      flex-direction: column;
-      width: 100%;
-      padding: 0;
-  }
-  
-  .gnb-item {
-      width: 100%;
-  }
-  
-  .gnb-link {
-      line-height: 60px !important;
-      border-bottom: 1px solid #f0f0f0;
-      font-size: 1.25rem !important;
-      padding: 0 10px !important;
-      width: 100%;
+    display: none;
   }
 
-  /* 서브메뉴 모바일 최적화 */
-  .gnb-sublist {
-      position: static;
-      display: block;
-      box-shadow: none;
-      border-top: none;
-      padding: 0 0 10px 20px;
-      background: #fafafa;
-  }
-
-  .gnb-sublink {
-      line-height: 45px;
-      padding: 0 !important;
-  }
-  
-  .m-menu-btn {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      width: 25px;
-      height: 18px;
-      background: none;
-      border: none;
-      cursor: pointer;
-      z-index: 1100;
-      padding: 0;
-  }
-  
-  .m-menu-btn span {
-      display: block;
-      width: 100%;
-      height: 2px;
-      background: var(--primary);
-      transition: 0.3s;
-  }
-  
-  .mobile-active .m-menu-btn span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
-  .mobile-active .m-menu-btn span:nth-child(2) { opacity: 0; }
-  .mobile-active .m-menu-btn span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
-
+  /* Mobile toggle button should be added later */
   #sub_visual {
     padding: 40px 15px;
   }
@@ -829,6 +748,82 @@ body {
     align-items: flex-start;
     gap: 10px;
   }
+
+  /* Mobile Header Styles */
+  .header-wrapper {
+    height: 70px;
+  }
+
+  .header-container {
+    padding: 0 20px;
+  }
+
+  .m-menu-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1100;
+  }
+
+  .m-menu-btn span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: var(--primary);
+    transition: 0.3s;
+  }
+
+  .gnb {
+    position: fixed;
+    top: 70px;
+    left: 100%;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background: #fff;
+    transition: 0.3s;
+    z-index: 1000;
+    flex-direction: column;
+    justify-content: flex-start !important;
+    padding: 40px 20px;
+  }
+
+  .mobile-active .gnb {
+    left: 0;
+  }
+
+  .gnb-list {
+    display: flex !important;
+    /* Force visible in side menu */
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .gnb-link {
+    line-height: 60px !important;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 1.2rem !important;
+  }
+
+  .mobile-active .m-menu-btn span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .mobile-active .m-menu-btn span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .mobile-active .m-menu-btn span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+.m-menu-btn {
+  display: none;
 }
 
 /* --- Gnuboard Global & Board Overrides --- */
