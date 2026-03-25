@@ -102,7 +102,7 @@ include_once(G5_THEME_PATH.'/head.php');
         
         <div class="business-grid">
             <a href="<?php echo G5_URL ?>/page/product1.php" class="b-card">
-                <div class="b-img"><img src="<?php echo G5_THEME_URL ?>/img/bussnies_sub.png" alt="배전반"></div>
+                <div class="b-img"><img src="https://images.unsplash.com/photo-1574639132917-0466e7c797a0?q=80&w=800&auto=format&fit=crop" alt="배전반"></div>
                 <div class="b-content">
                     <h4>배전반</h4>
                     <div class="b-tags"><span class="b-tag">저압/고압</span><span class="b-tag">동력/분전</span></div>
@@ -111,7 +111,7 @@ include_once(G5_THEME_PATH.'/head.php');
                 <div class="b-link">자세히 보기 &rarr;</div>
             </a>
             <a href="<?php echo G5_URL ?>/page/product1_8.php" class="b-card">
-                <div class="b-img"><img src="<?php echo G5_THEME_URL ?>/img/product_sub.png" alt="자동제어반"></div>
+                <div class="b-img"><img src="https://images.unsplash.com/photo-1544724569-5f546fd6f2b5?q=80&w=800&auto=format&fit=crop" alt="자동제어반"></div>
                 <div class="b-content">
                     <h4>자동제어반</h4>
                     <div class="b-tags"><span class="b-tag">PLC</span><span class="b-tag">인버터</span></div>
@@ -120,7 +120,7 @@ include_once(G5_THEME_PATH.'/head.php');
                 <div class="b-link">자세히 보기 &rarr;</div>
             </a>
             <a href="<?php echo G5_URL ?>/page/product_business.php" class="b-card">
-                <div class="b-img"><img src="<?php echo G5_THEME_URL ?>/img/company_sub.png" alt="자동화 설비"></div>
+                <div class="b-img"><img src="https://images.unsplash.com/photo-1565347878219-552c849f139e?q=80&w=800&auto=format&fit=crop" alt="자동화 설비"></div>
                 <div class="b-content">
                     <h4>자동화 설비</h4>
                     <div class="b-tags"><span class="b-tag">FA System</span><span class="b-tag">SCADA</span></div>
@@ -129,7 +129,7 @@ include_once(G5_THEME_PATH.'/head.php');
                 <div class="b-link">자세히 보기 &rarr;</div>
             </a>
             <a href="<?php echo G5_URL ?>/page/estimate.php" class="b-card">
-                <div class="b-img"><img src="<?php echo G5_THEME_URL ?>/img/support_sub.png" alt="유지보수"></div>
+                <div class="b-img"><img src="https://images.unsplash.com/photo-1516733725897-1aa73b87c8e8?q=80&w=800&auto=format&fit=crop" alt="유지보수"></div>
                 <div class="b-content">
                     <h4>유지보수</h4>
                     <div class="b-tags"><span class="b-tag">정기점검</span><span class="b-tag">긴급출동</span></div>
