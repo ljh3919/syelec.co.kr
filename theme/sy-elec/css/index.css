@@ -532,6 +532,26 @@
     .why-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    /* 하단 CTA 영역은 1024px부터 세로로 배치 (사용자 요청: 버튼을 아래로) */
+    .f-cta-inner {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    
+    .f-cta-btns {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+    }
+    
+    .btn-cta-o, .btn-cta-k {
+        width: 100%;
+        padding: 15px 20px;
+        font-size: 1.1rem;
+        white-space: nowrap;
+    }
 }
 
 @media (max-width: 768px) {
@@ -589,20 +609,6 @@
     .sd {
         font-size: 1.1rem;
         margin-bottom: 40px;
-    }
-
-    .f-cta-inner {
-        flex-direction: column;
-        text-align: center;
-        gap: 30px;
-    }
-
-    .f-cta-inner h2 {
-        font-size: 1.6rem;
-    }
-
-    .f-cta-inner p {
-        font-size: 1.1rem;
     }
 
     .f-cta-btns {
