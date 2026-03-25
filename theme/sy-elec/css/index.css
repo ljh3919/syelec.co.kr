@@ -521,60 +521,103 @@
 
 /* Mobile Responsiveness */
 @media (max-width: 1024px) {
-    .business-grid { grid-template-columns: repeat(2, 1fr); }
-    .portfolio-grid { grid-template-columns: repeat(2, 1fr); }
-    .why-grid { grid-template-columns: repeat(2, 1fr); }
+    .business-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 768px) {
-    .hero-section { padding: 80px 20px 40px; }
-    .hero-hd-logo svg { max-width: 280px; }
-    .logo-sub { font-size: 1.8rem; }
-    .hero-inner p { font-size: 1.1rem; margin-bottom: 40px; }
-    .hero-btns { flex-direction: column; gap: 12px; }
-    .hero-btns a { width: 100%; padding: 15px; font-size: 1.1rem; }
-    .hero-bottom-info { display: none; } /* 모바일에서 하단 요약 정보 숨김 처리로 깔끔하게 */
-    
-    .kakao-floating { position: static; width: 100%; margin-top: 30px; }
-    
-    .business-grid, .portfolio-grid, .why-grid { 
-        grid-template-columns: 1fr; 
+    .hero-section {
+        padding: 80px 20px 40px;
+    }
+
+    .hero-hd-logo svg {
+        max-width: 280px;
+    }
+
+    .logo-sub {
+        font-size: 1.8rem;
+    }
+
+    .hero-inner p {
+        font-size: 1.1rem;
+        margin-bottom: 40px;
+    }
+
+    .hero-btns {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .hero-btns a {
+        width: 100%;
+        padding: 15px;
+        font-size: 1.1rem;
+    }
+
+    .hero-bottom-info {
+        display: none;
+    }
+
+    /* 모바일에서 하단 요약 정보 숨김 처리로 깔끔하게 */
+
+    .kakao-floating {
+        position: static;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .business-grid,
+    .portfolio-grid,
+    .why-grid {
+        grid-template-columns: 1fr;
         gap: 20px;
     }
-    
-    .mt { font-size: 2.2rem; }
-    .sd { font-size: 1.1rem; margin-bottom: 40px; }
+
+    .mt {
+        font-size: 2.2rem;
+    }
+
+    .sd {
+        font-size: 1.1rem;
+        margin-bottom: 40px;
+    }
 
     .f-cta-inner {
         flex-direction: column;
         text-align: center;
         gap: 30px;
     }
-    
+
     .f-cta-inner h2 {
         font-size: 1.6rem;
     }
-    
+
     .f-cta-inner p {
         font-size: 1.1rem;
     }
-    
+
     .f-cta-btns {
-        flex-direction: row; /* 가로 배치로 원상 복구 */
+        flex-direction: column;
         width: 100%;
-        gap: 8px; /* 간격 축소 */
-    }
-    
-    .btn-cta-o, .btn-cta-k {
-        flex: 1; /* 동일 너비 부여 */
-        padding: 12px 10px; /* 여백 축소 */
-        font-size: 0.9rem; /* 폰트 크기 대폭 축소 (한 줄에 넣기 위해) */
-        white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+        gap: 12px;
     }
 
-    .btn-cta-o svg, .btn-cta-k .k-header-row {
-        transform: scale(0.8); /* 아이콘 크기 축소 */
-        margin-right: 5px !important;
+    .btn-cta-o,
+    .btn-cta-k {
+        width: 100%;
+        padding: 15px 20px;
+        font-size: 1.1rem;
+        white-space: nowrap;
+        /* 텍스트 줄바꿈 방지 */
     }
 
     .m-br {
