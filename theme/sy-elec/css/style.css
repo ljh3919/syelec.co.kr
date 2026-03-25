@@ -13,7 +13,13 @@
   --transition: 0.3s ease-in-out;
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Pretendard', sans-serif; letter-spacing: -0.02em; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Pretendard', sans-serif;
+  letter-spacing: -0.02em;
+}
 
 
 body {
@@ -956,12 +962,12 @@ body {
 
 .float-btn.kakao {
   background: #fee500;
-  color: #3C1E1E;
+  color: #191919;
 }
 
 .float-btn.phone {
-  background: var(--primary);
-  color: white;
+  background: var(--text-dark);
+  color: var(--white);
 }
 
 .float-btn svg {

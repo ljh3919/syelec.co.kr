@@ -97,23 +97,17 @@
     color: var(--point);
 }
 
+/* Floating Kakao box on Hero */
 .kakao-floating {
     position: absolute;
     bottom: -40px;
     right: 0;
     width: 280px;
-    background: #FEE500;
+    background: var(--kakao);
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
     z-index: 10;
-    text-decoration: none;
-    transition: all 0.3s;
-}
-
-.kakao-floating:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.5);
 }
 
 .k-header {
@@ -121,23 +115,17 @@
     display: flex;
     align-items: center;
     gap: 15px;
-    background: #FEE500;
 }
 
 .k-circle {
-    width: 44px;
-    height: 44px;
-    background: #3C1E1E;
+    background: #191919;
+    color: var(--kakao);
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FEE500;
-}
-
-.k-circle svg {
-    width: 26px;
-    height: 26px;
 }
 
 .k-title-group {
@@ -146,18 +134,28 @@
 }
 
 .k-stxt {
-    color: #3C1E1E;
-    font-size: 0.85rem;
-    font-weight: 500;
-    opacity: 0.8;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .k-mtxt {
-    color: #3C1E1E;
-    font-size: 1.3rem;
-    font-weight: 800;
+    font-size: 1.35rem;
+    font-weight: 900;
+    color: #191919;
+    letter-spacing: -0.5px;
 }
 
+.k-button {
+    background: #191919;
+    color: var(--kakao);
+    text-align: center;
+    padding: 15px 0;
+    display: block;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 1.3rem;
+}
 
 /* Business Section */
 .business-section {

@@ -40,11 +40,9 @@ include_once(G5_THEME_PATH.'/head.php');
         </div>
 
         <!-- 카카오 상담 박스 -->
-        <a href="https://pf.kakao.com/_RxfuxgG/chat" target="_blank" class="kakao-floating">
+        <div class="kakao-floating">
             <div class="k-header">
-                <div class="k-circle">
-                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3c-4.97 0-9 3.13-9 7 0 2.48 1.64 4.66 4.14 5.92-.16.58-.59 2.08-.68 2.42-.1.4.14.39.3.29.12-.08 1.96-1.33 2.74-1.87.81.17 1.66.27 2.5.27 4.97 0 9-3.13 9-7 0-3.87-4.03-7-9-7z"/></svg>
-                </div>
+                <div class="k-circle"><svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3c-4.971 0-9 3.134-9 7 0 2.478 1.637 4.659 4.14 5.92-.164.577-.591 2.083-.676 2.42-.1.396.143.392.3.287.123-.082 1.957-1.332 2.74-1.873.805.171 1.656.266 2.496.266 4.971 0 9-3.134 9-7s-4.029-7-9-7z"/></svg></div>
                 <div class="k-title-group">
                     <span class="k-stxt">실시간 빠른 답변</span>
                     <span class="k-mtxt">카카오톡 상담</span>
