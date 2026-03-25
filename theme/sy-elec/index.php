@@ -38,7 +38,7 @@ include_once(G5_THEME_PATH.'/head.php');
                         </g>
                     </g>
                 </g>
-            </svg>
+            </svg>특약점
         </div>
         <p>10년 이상 현장 경험과 기술력으로 완성하는 맞춤 솔루션</p>
         
