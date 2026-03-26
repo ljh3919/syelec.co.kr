@@ -44,8 +44,11 @@ if (!defined('_INDEX_') && !$is_legacy_page) {
 <!-- Floating Buttons -->
 <?php if (!defined('_INDEX_')) { ?>
 <div class="floating-chat">
-    <a href="https://pf.kakao.com/_xxxx" target="_blank" class="float-btn kakao">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+    <a href="https://pf.kakao.com/_xiZTVX" target="_blank" class="float-btn kakao">
+        <svg width="24" height="24" viewBox="0 0 24 24">
+            <path fill="#191919" d="M12 3c-4.971 0-9 3.134-9 7 0 2.478 1.637 4.659 4.14 5.92-.164.577-.591 2.083-.676 2.42-.1.396.143.392.3.287.123-.082 1.957-1.332 2.74-1.873.805.171 1.656.266 2.496.266 4.971 0 9-3.134 9-7s-4.029-7-9-7z"/>
+            <text x="12" y="12.5" text-anchor="middle" font-size="5" font-weight="900" fill="#FEE500" style="font-family:sans-serif;">TALK</text>
+        </svg>
         카카오톡
     </a>
     <a href="tel:031-591-8310" class="float-btn phone">
@@ -53,7 +56,8 @@ if (!defined('_INDEX_') && !$is_legacy_page) {
         전화상담
     </a>
 </div>
-<?php } ?>
+<?php
+}?>
 
 <?php
 include_once(G5_PATH . '/tail.sub.php');
