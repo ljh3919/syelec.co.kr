@@ -83,7 +83,7 @@ include_once(G5_THEME_PATH.'/head.php');
                 </div>
                 <div class="k-stxt">실시간 빠른 답변</div>
             </div>
-            <a href="http://pf.kakao.com/_xiZTVX/friend" target="_blank" class="k-button">
+            <a href="http://pf.kakao.com/_lGdxdX/chat" target="_blank" class="k-button">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="margin-right:15px; color:#ffde00;">
                     <path d="M20 15.5c-1.2 0-2.4-.2-3.6-.6-.3-.1-.7 0-1 .2l-2.2 2.2c-2.8-1.4-5.1-3.8-6.6-6.6l2.2-2.2c.3-.3.4-.7.2-1-.3-1.1-.5-2.3-.5-3.5 0-.8-.7-1.5-1.5-1.5h-3.5c-.8 0-1.5.7-1.5 1.5 0 9.4 7.6 17 17 17 .8 0 1.5-.7 1.5-1.5v-3.5c0-.8-.7-1.5-1.5-1.5z"></path>
                 </svg>
@@ -235,7 +235,7 @@ include_once(G5_THEME_PATH.'/head.php');
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="margin-right:15px;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
                 031-591-8310
             </a>
-            <a href="http://pf.kakao.com/_xiZTVX/friend" target="_blank" class="btn-cta-k">
+            <a href="http://pf.kakao.com/_lGdxdX/chat" target="_blank" class="btn-cta-k">
                 <div style="width:40px; height:40px; background:#FEE500; border-radius:50%; display:flex; align-items:center; justify-content:center; margin-right:15px; flex-shrink:0;">
                     <svg width="24" height="24" viewBox="0 0 24 24">
                         <path fill="#191919" d="M12 3c-4.971 0-9 3.134-9 7 0 2.478 1.637 4.659 4.14 5.92-.164.577-.591 2.083-.676 2.42-.1.396.143.392.3.287.123-.082 1.957-1.332 2.74-1.873.805.171 1.656.266 2.496.266 4.971 0 9-3.134 9-7s-4.029-7-9-7z"/>

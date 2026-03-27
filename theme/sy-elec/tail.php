@@ -44,7 +44,7 @@ if (!defined('_INDEX_') && !$is_legacy_page) {
 <!-- Floating Buttons -->
 <?php if (!defined('_INDEX_')) { ?>
 <div class="floating-chat">
-    <a href="http://pf.kakao.com/_xiZTVX/friend" target="_blank" class="float-btn kakao">
+    <a href="http://pf.kakao.com/_lGdxdX/chat" target="_blank" class="float-btn kakao">
         <svg width="24" height="24" viewBox="0 0 24 24">
             <path fill="#191919" d="M12 3c-4.971 0-9 3.134-9 7 0 2.478 1.637 4.659 4.14 5.92-.164.577-.591 2.083-.676 2.42-.1.396.143.392.3.287.123-.082 1.957-1.332 2.74-1.873.805.171 1.656.266 2.496.266 4.971 0 9-3.134 9-7s-4.029-7-9-7z"/>
             <text x="12" y="12.5" text-anchor="middle" font-size="5" font-weight="900" fill="#FEE500" style="font-family:sans-serif;">TALK</text>
