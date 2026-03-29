@@ -98,7 +98,7 @@ include_once(G5_THEME_PATH.'/head.php');
     <div class="container">
         <p class="st">OUR BUSINESS</p>
         <h2 class="mt">핵심 제품 & 사업 분야</h2>
-        <p class="sd">현대인버터, 배선용차단기, 누전차단기</p>
+        <p class="sd">HD현대일렉트릭, 중저압차단기, 변압기</p>
         
         <div class="business-grid">
             <a href="<?php echo G5_URL ?>/page/product1.php" class="b-card">
