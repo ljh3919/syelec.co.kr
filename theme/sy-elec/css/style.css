@@ -857,6 +857,11 @@ body {
     transform: rotate(180deg);
   }
 
+  /* 모바일에서는 CSS hover로 열리지 않도록 방지 (JS slideDown과 충돌로 인한 깜빡임 해결) */
+  .gnb-item:hover .gnb-sublist {
+    display: none;
+  }
+
   .gnb-sublist {
     display: none;
     position: static;
