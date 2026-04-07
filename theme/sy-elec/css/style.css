@@ -846,19 +846,14 @@ body {
   }
 
   /* Dropdown icon indicator */
-  .m-toggle {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 48px;
+  .gnb-item.has-sub .gnb-link::after {
+    content: "▼";
     font-size: 0.7rem;
     color: #999;
     transition: transform 0.3s;
-    cursor: pointer;
   }
 
-  .gnb-item.active .m-toggle {
+  .gnb-item.active .gnb-link::after {
     transform: rotate(180deg);
   }
 

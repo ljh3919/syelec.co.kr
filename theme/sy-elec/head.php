@@ -66,29 +66,33 @@ $(function(){
     $('#mobileMenuBtn').click(function(){
         $('body').toggleClass('mobile-active');
     });
-    
-    // 서브메뉴가 있는 항목에 토글 화살표 추가
-    $('.gnb-item.has-sub > .gnb-link').each(function(){
-        $(this).append('<span class="m-toggle">▼</span>');
-    });
 
-    // 토글 화살표 클릭 시 아코디언 메뉴 작동
-    $('.m-toggle').click(function(e){
+    // 모바일 아코디언 메뉴
+    $('.gnb-item.has-sub > .gnb-link').click(function(e){
         if(window.innerWidth <= 768) {
-            e.preventDefault();
-            e.stopPropagation(); // 링크 이동 방지
-            
-            var $item = $(this).closest('.gnb-item');
-            var $sub = $item.find('.gnb-sublist');
-            
-            if($item.hasClass('active')) {
-                $sub.slideUp(300);
-                $item.removeClass('active');
+            var width = $(this).outerWidth();
+            var clickX;
+            if(e.originalEvent && e.originalEvent.touches) {
+                clickX = e.originalEvent.touches[0].pageX - $(this).offset().left;
             } else {
-                $('.gnb-sublist').slideUp(300);
-                $('.gnb-item').removeClass('active');
-                $sub.slideDown(300);
-                $item.addClass('active');
+                clickX = e.pageX - $(this).offset().left;
+            }
+            
+            // 만약 우측 60px 이내(역삼각형 영역)를 클릭했다면
+            if (width - clickX < 60) {
+                e.preventDefault(); // 링크 이동 방지
+                var $item = $(this).parent();
+                var $sub = $(this).next('.gnb-sublist');
+                
+                if($item.hasClass('active')) {
+                    $sub.slideUp(300);
+                    $item.removeClass('active');
+                } else {
+                    $('.gnb-sublist').slideUp(300);
+                    $('.gnb-item').removeClass('active');
+                    $sub.slideDown(300);
+                    $item.addClass('active');
+                }
             }
         }
     });
