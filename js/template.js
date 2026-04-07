@@ -92,41 +92,45 @@ $(function(){
 
 /* Main Banner */
 $(function(){
-    $('.mc_banner ul').carouFredSel({
-        responsive:true,
-        firstLoadChk :true,
-        direction:'left',
-        circular:true,
-        infinite:false,
-        auto:true,
-        prev:false,
-        next:false,
-        pagination:'.mc_banner_pagn',
-        swipe:{onMouse:false, onTouch:true},
-        items:1,    
-        scroll:{fx :'crossfade','duration':1000}            
-    });
+    if ($.fn.carouFredSel) {
+        $('.mc_banner ul').carouFredSel({
+            responsive:true,
+            firstLoadChk :true,
+            direction:'left',
+            circular:true,
+            infinite:false,
+            auto:true,
+            prev:false,
+            next:false,
+            pagination:'.mc_banner_pagn',
+            swipe:{onMouse:false, onTouch:true},
+            items:1,    
+            scroll:{fx :'crossfade','duration':1000}            
+        });
+    }
 });
 
 /* Main Products */
 $.fn.mcProducts = function(){
     $.each(this, function(i,v){
-        $(v).find('.slide_box > ul').carouFredSel({
-            circular: false,
-            infinite: false,
-            auto: false,
-            prev: false,
-            next: false,
-            pagination: false,
-            scroll: {
-                fx :'crossfade',
-                duration: 100,
-                onAfter: function(data){
-                    $temp = $(this).triggerHandler('currentPosition');
-                    $(v).find('.label_box li').removeClass('active').eq($temp).addClass('active');
+        if ($.fn.carouFredSel) {
+            $(v).find('.slide_box > ul').carouFredSel({
+                circular: false,
+                infinite: false,
+                auto: false,
+                prev: false,
+                next: false,
+                pagination: false,
+                scroll: {
+                    fx :'crossfade',
+                    duration: 100,
+                    onAfter: function(data){
+                        $temp = $(this).triggerHandler('currentPosition');
+                        $(v).find('.label_box li').removeClass('active').eq($temp).addClass('active');
+                    }
                 }
-            }
-        });
+            });
+        }
         $(v).find('.label_box ul a').bind('mouseover focusin',function(e){
             e.preventDefault();
             $temp = $(this).parent().index();
@@ -154,22 +158,24 @@ $(function(){
 /* Main Products_right */
 $.fn.mcProducts = function(){
     $.each(this, function(i,v){
-        $(v).find('.slide_box > ul').carouFredSel({
-            circular: false,
-            infinite: false,
-            auto: false,
-            prev: false,
-            next: false,
-            pagination: false,
-            scroll: {
-                fx :'crossfade',
-                duration: 100,
-                onAfter: function(data){
-                    $temp = $(this).triggerHandler('currentPosition');
-                    $(v).find('.label_box li').removeClass('active').eq($temp).addClass('active');
+        if ($.fn.carouFredSel) {
+            $(v).find('.slide_box > ul').carouFredSel({
+                circular: false,
+                infinite: false,
+                auto: false,
+                prev: false,
+                next: false,
+                pagination: false,
+                scroll: {
+                    fx :'crossfade',
+                    duration: 100,
+                    onAfter: function(data){
+                        $temp = $(this).triggerHandler('currentPosition');
+                        $(v).find('.label_box li').removeClass('active').eq($temp).addClass('active');
+                    }
                 }
-            }
-        });
+            });
+        }
         $(v).find('.label_box ul a').bind('mouseover focusin',function(e){
             e.preventDefault();
             $temp = $(this).parent().index();
@@ -198,20 +204,22 @@ $(function(){
 
 /* site_area */
 $(function(){
-    $('.site_area_cont').carouFredSel({
-        responsive:false,
-        firstLoadChk :true,
-        direction:'left',
-        circular:true,
-        infinite:false,
-        auto:true,
-        prev:'.site_area_prev',
-        next:'.site_area_next',
-        pagination: false,
-        swipe:{onMouse:false, onTouch:true},
-        items:9,                
-        scroll : {items : 1}
-    });
+    if ($.fn.carouFredSel) {
+        $('.site_area_cont').carouFredSel({
+            responsive:false,
+            firstLoadChk :true,
+            direction:'left',
+            circular:true,
+            infinite:false,
+            auto:true,
+            prev:'.site_area_prev',
+            next:'.site_area_next',
+            pagination: false,
+            swipe:{onMouse:false, onTouch:true},
+            items:9,                
+            scroll : {items : 1}
+        });
+    }
 });
 
 
