@@ -846,14 +846,19 @@ body {
   }
 
   /* Dropdown icon indicator */
-  .gnb-item.has-sub .gnb-link::after {
-    content: "▼";
+  .m-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 48px;
     font-size: 0.7rem;
     color: #999;
     transition: transform 0.3s;
+    cursor: pointer;
   }
 
-  .gnb-item.active .gnb-link::after {
+  .gnb-item.active .m-toggle {
     transform: rotate(180deg);
   }
 
@@ -879,10 +884,10 @@ body {
   }
 
   /* Dimmed shadow overlay when menu is open */
-  body.mobile-active::after {
+  .mobile-active .header-wrapper::before {
     content: '';
     position: fixed;
-    top: 0; left: 0; width: 100%; height: 100%;
+    top: 0; left: 0; width: 100vw; height: 100vh;
     background: rgba(0,0,0,0.5);
     z-index: 1000;
   }

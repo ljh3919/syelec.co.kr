@@ -1,10 +1,12 @@
 <?php
 if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 
+/*
 if (G5_IS_MOBILE) {
     include_once(G5_THEME_MOBILE_PATH.'/head.php');
     return;
 }
+*/
 
 if(G5_COMMUNITY_USE === false) {
     define('G5_IS_COMMUNITY_PAGE', true);
@@ -14,7 +16,7 @@ if(G5_COMMUNITY_USE === false) {
 
 include_once(G5_PATH.'/head.sub.php');
 add_stylesheet('<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">', 0);
-add_stylesheet('<link rel="stylesheet" href="'.G5_THEME_URL.'/css/style.css">', 0);
+add_stylesheet('<link rel="stylesheet" href="'.G5_THEME_URL.'/css/style.css?ver='.time().'">', 0);
 ?>
 <header class="header-wrapper">
     <div class="header-container">
@@ -65,12 +67,19 @@ $(function(){
         $('body').toggleClass('mobile-active');
     });
     
-    // 모바일 아코디언 메뉴
-    $('.gnb-item.has-sub > .gnb-link').click(function(e){
+    // 서브메뉴가 있는 항목에 토글 화살표 추가
+    $('.gnb-item.has-sub > .gnb-link').each(function(){
+        $(this).append('<span class="m-toggle">▼</span>');
+    });
+
+    // 토글 화살표 클릭 시 아코디언 메뉴 작동
+    $('.m-toggle').click(function(e){
         if(window.innerWidth <= 768) {
             e.preventDefault();
-            var $item = $(this).parent();
-            var $sub = $(this).next('.gnb-sublist');
+            e.stopPropagation(); // 링크 이동 방지
+            
+            var $item = $(this).closest('.gnb-item');
+            var $sub = $item.find('.gnb-sublist');
             
             if($item.hasClass('active')) {
                 $sub.slideUp(300);
