@@ -29,7 +29,7 @@ add_stylesheet('<link rel="stylesheet" href="'.G5_THEME_URL.'/css/style.css">', 
                     foreach( $menu_datas as $row ){
                         if( empty($row) ) continue;
                 ?>
-                <li class="gnb-item">
+                <li class="gnb-item <?php echo (isset($row['sub']) && is_array($row['sub']) && count($row['sub']) > 0) ? 'has-sub' : ''; ?>">
                     <a href="<?php echo $row['me_link']; ?>" target="_<?php echo $row['me_target']; ?>" class="gnb-link"><?php echo $row['me_name'] ?></a>
                     <?php if(isset($row['sub']) && is_array($row['sub']) && count($row['sub']) > 0) { ?>
                     <ul class="gnb-sublist">
@@ -63,6 +63,25 @@ add_stylesheet('<link rel="stylesheet" href="'.G5_THEME_URL.'/css/style.css">', 
 $(function(){
     $('#mobileMenuBtn').click(function(){
         $('body').toggleClass('mobile-active');
+    });
+    
+    // 모바일 아코디언 메뉴
+    $('.gnb-item.has-sub > .gnb-link').click(function(e){
+        if(window.innerWidth <= 768) {
+            e.preventDefault();
+            var $item = $(this).parent();
+            var $sub = $(this).next('.gnb-sublist');
+            
+            if($item.hasClass('active')) {
+                $sub.slideUp(300);
+                $item.removeClass('active');
+            } else {
+                $('.gnb-sublist').slideUp(300);
+                $('.gnb-item').removeClass('active');
+                $sub.slideDown(300);
+                $item.addClass('active');
+            }
+        }
     });
 });
 </script>
