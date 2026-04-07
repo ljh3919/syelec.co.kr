@@ -373,3 +373,29 @@ box-shadow:inset 0 1px 2px rgba(0, 0, 0, 0.1)}
 #bo_w .bo_w_select select {border:1px solid #d0d3db;width:100%;height:40px;border-radius:3px}
 #bo_w .btn_submit {padding:0 20px;font-size:1.167em}
 #bo_w .btn_cancel {border-radius:3px;font-size:1.167em}
+
+/* Mobile Responsiveness for Gallery Board */
+@media (max-width: 768px) {
+  /* Gallery List */
+  .gall_row .col-gn-1, .gall_row .col-gn-2, .gall_row .col-gn-3, .gall_row .col-gn-4, .gall_row .col-gn-5, .gall_row .col-gn-6, .gall_row .col-gn-7, .gall_row .col-gn-8, .gall_row .col-gn-9, .gall_row .col-gn-10 {
+    width: 50%;
+  }
+  #bo_gall .gall_box { margin-bottom: 25px; }
+  #bo_gall .bo_tit { font-size: 1.1em; line-height: 1.4; word-break: keep-all; }
+  
+  /* Top info and buttons */
+  #bo_btn_top .bo_fx, #bo_btn_top .btn_bo_user, #bo_btn_top .btn_bo_adm { float: none; display: flex; flex-wrap: wrap; gap: 5px; justify-content: flex-end; margin-bottom: 10px; }
+  #bo_list_total { float: none; margin-bottom: 10px; display: block; }
+  
+  /* View */
+  #bo_v_title .bo_v_tit { font-size: 1.4rem; word-break: keep-all; line-height: 1.4; }
+  #bo_v_info .profile_info { float: none; display: flex; align-items: center; margin: 15px 0; }
+  #bo_v_com { float: none; margin-top: 15px; }
+  #bo_v_share { margin-top: 15px; text-align: left; }
+  
+  /* Write */
+  #bo_w .bo_w_info .frm_input { width: 100%; margin-left: 0 !important; margin-bottom: 10px; }
+  
+  /* Pagination */
+  .pg_wrap { text-align: center; margin-top: 20px; }
+}
