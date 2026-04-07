@@ -70,29 +70,19 @@ $(function(){
     // 모바일 아코디언 메뉴
     $('.gnb-item.has-sub > .gnb-link').click(function(e){
         if(window.innerWidth <= 768) {
-            var width = $(this).outerWidth();
-            var clickX;
-            if(e.originalEvent && e.originalEvent.touches) {
-                clickX = e.originalEvent.touches[0].pageX - $(this).offset().left;
-            } else {
-                clickX = e.pageX - $(this).offset().left;
-            }
+            e.preventDefault(); // 링크 이동을 완전히 차단
             
-            // 만약 우측 60px 이내(역삼각형 영역)를 클릭했다면
-            if (width - clickX < 60) {
-                e.preventDefault(); // 링크 이동 방지
-                var $item = $(this).parent();
-                var $sub = $(this).next('.gnb-sublist');
-                
-                if($item.hasClass('active')) {
-                    $sub.slideUp(300);
-                    $item.removeClass('active');
-                } else {
-                    $('.gnb-sublist').slideUp(300);
-                    $('.gnb-item').removeClass('active');
-                    $sub.slideDown(300);
-                    $item.addClass('active');
-                }
+            var $item = $(this).parent();
+            var $sub = $(this).next('.gnb-sublist');
+            
+            if($item.hasClass('active')) {
+                $sub.slideUp(300);
+                $item.removeClass('active');
+            } else {
+                $('.gnb-sublist').slideUp(300);
+                $('.gnb-item').removeClass('active');
+                $sub.slideDown(300);
+                $item.addClass('active');
             }
         }
     });
