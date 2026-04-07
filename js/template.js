@@ -143,8 +143,12 @@ $.fn.mcProducts = function(){
     return this;
 };
 $(function(){
-    $('.mc_products .list').mcProducts();
-    $('.mc_banner li .img').imgLiquid({fill:true, horizontalAlign:"center", verticalAlign:"center"});
+    if ($.fn.mcProducts) {
+        $('.mc_products .list').mcProducts();
+    }
+    if ($.fn.imgLiquid) {
+        $('.mc_banner li .img').imgLiquid({fill:true, horizontalAlign:"center", verticalAlign:"center"});
+    }
     
     $('.mc_products .list').bind('mouseover',function(e){
         $('.mc_products .list').removeClass('on');
@@ -188,8 +192,12 @@ $.fn.mcProducts = function(){
     return this;
 };
 $(function(){
-    $('.mc_products .list_right').mcProducts();
-    $('.mc_banner li .img').imgLiquid({fill:true, horizontalAlign:"center", verticalAlign:"center"});
+    if ($.fn.mcProducts) {
+        $('.mc_products .list_right').mcProducts();
+    }
+    if ($.fn.imgLiquid) {
+        $('.mc_banner li .img').imgLiquid({fill:true, horizontalAlign:"center", verticalAlign:"center"});
+    }
     
     $('.mc_products .list_right').bind('mouseover',function(e){
         $('.mc_products .list_right').removeClass('on');
