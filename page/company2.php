@@ -50,7 +50,7 @@ include_once(G5_THEME_PATH.'/head.php');
     </div>
     <!-- article_top -->
     <div id="article">
-     <div id="map" style="width:770px;height:450px;"></div>
+     <div id="map" style="width:100%; height:400px;"></div>
       <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=80543f325a337a5cad5afcdf29340e50"></script>
       <script>
         var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
