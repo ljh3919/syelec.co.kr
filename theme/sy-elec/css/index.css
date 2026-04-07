@@ -559,17 +559,24 @@
         padding: 80px 20px 40px;
     }
 
+    .hero-hd-logo {
+        flex-wrap: nowrap;
+    }
+
     .hero-hd-logo svg {
-        max-width: 280px;
+        max-width: 60%;
     }
 
     .logo-sub {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
+        white-space: nowrap;
     }
 
     .hero-inner p {
-        font-size: 1.1rem;
+        font-size: 3.8vw; /* 긴 텍스트도 모바일에서 한 줄로 */
         margin-bottom: 40px;
+        white-space: nowrap;
+        letter-spacing: -1px;
     }
 
     .hero-btns {
@@ -603,18 +610,34 @@
     }
 
     .mt {
-        font-size: 2.2rem;
+        font-size: 5.5vw;
+        white-space: nowrap;
+        word-break: keep-all;
     }
 
     .sd {
-        font-size: 1.1rem;
+        font-size: 3.5vw;
         margin-bottom: 40px;
+        white-space: nowrap;
+        letter-spacing: -1px;
     }
 
     .f-cta-btns {
         flex-direction: column;
         width: 100%;
         gap: 12px;
+    }
+
+    .f-cta-inner h2 {
+        font-size: 5.5vw;
+        white-space: nowrap;
+        letter-spacing: -1px;
+    }
+
+    .f-cta-inner p {
+        font-size: 3.5vw;
+        white-space: nowrap;
+        letter-spacing: -1px;
     }
 
     .btn-cta-o,
